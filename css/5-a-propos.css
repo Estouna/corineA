@@ -1,0 +1,66 @@
+#a-propos {
+    position: relative;
+    background-image: url('../images/BandeauAccueiCentre.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.block-corine {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: calc(6px + 0.6vw) calc(6px + 0.6vw) calc(190px + 0.7vw) calc(6px + 0.6vw);
+    margin:  0 calc(1px + 7vw) 0 0;
+}
+
+.block-titre {
+    width: 100%;
+}
+
+.h1-a-propos {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.ligne-presentation {
+    width: 454px;
+    height: 1px;
+    background-color: var(--black);
+    margin: 4px 0 8px;
+}
+
+.h2-a-propos {
+    font-size: 18.5px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.block-photo-text {
+    width: 100%;
+    padding: calc(80px + 2vw) 2px 0 2px;
+}
+
+.photo {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+}
+
+.img-corine {
+    position: absolute;
+    top: -60px;
+    left:0;
+    max-width: 120px;
+    height: auto;
+}
+
+.p-presentation {
+    width: 100%;
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 0;
+}

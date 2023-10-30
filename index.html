@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="#">
+	<link rel="stylesheet" href="css/1-fonts.css" type="text/css">
+	<link rel="stylesheet" href="css/2-resetAndStyleGlobal.css">
+	<link rel="stylesheet" href="css/3-navbar.css" type="text/css">
+	<link rel="stylesheet" href="css/4-accueil.css" type="text/css">
+	<link rel="stylesheet" href="css/5-a-propos.css" type="text/css">
+	<link rel="stylesheet" href="css/6-galerie.css" type="text/css">
+	<link rel="stylesheet" href="css/7-contact.css" type="text/css">
+	<link rel="stylesheet" href="css/100-mediaqueries.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/scrollOnPage.js" defer></script>
+	<script src="js/menuBurger.js" defer></script>
+	<script src="js/slider.js" defer></script>
+	<script src="js/script.js" defer></script>
+	<title>Corine Avanzini-Forneron</title>
+</head>
+<body>
+
+	<header class="header-nav flex f-justify-between">
+		<a href="/c-corine"><img src="images/Logo.png" alt="Logo Egaïa" class="logo"></a>
+		<nav class="nav-main">
+			<ul class="nav-main-ul flex f-center">
+				<li class="nav-main-li"><a href="#home" class="active">Accueil</a></li>
+				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
+				<li class="nav-main-li"><a href="#a-propos">A propos</a></li>
+				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
+				<li class="nav-main-li"><a href="#galery">Galerie</a></li>
+				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
+				<li class="nav-main-li"><a href="#contact">Contact</a></li>
+			</ul>
+
+			<div class="burger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- 
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ACCUEIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+		-->
+		<section id="home" class="flex f-justify-center f-align-end">
+			<div class="background"></div>
+			<div class="container-home column">
+
+
+                <div class="item flex f-grow-1"></div>
+            
+                <div class="item flex"></div>
+                
+                <div class="item flex f-center f-grow-1">
+					<p class="p-home">Peindre et dépeindre le présent</p>
+				</div>
+            
+            </div>
+		</section>
+
+
+		<!-- 
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX A PROPOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+		-->
+		<section id="a-propos" class="container-a-propos flex">
+			<div class="block-corine">
+				<div class="block-titre">
+					<div class="column f-center">
+						<h1 class="h1-a-propos">Corine Avanzini</h1>
+						<div class="ligne-presentation"></div>
+						<h2 class="h2-a-propos">PEINTURE VIBRATOIRE & POESIE MACHINALE</h2>
+					</div>
+				</div>
+
+				<div class="block-photo-text">
+					<div class="photo">
+						<img class="img-corine" src="images/Corine portrait nb width 300px.jpg" alt="Photo de Corine Avanzini-Forneron">
+					</div>
+					<p class="p-presentation">
+						J’ai toujours rêvé de faire des toiles magiques<br>
+						et des mots bizarres.<br>
+						Ecrire, décrire l’instant, peindre et dépeindre<br>
+						le présent, voilà mon postulat.<br>
+						J’aime jouer avec les mots et les couleurs pour baliser mon<br>
+						univers et votre imaginaire, vous inviter à chercher sans découvrir<br>
+						et nous découvrir entre les silences en décourageant le mental.<br>
+						Belle bal(l)ade en galerie.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- 
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GALERIE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+		-->
+		<section id="galery">
+			<div class="main-content">
+				<div class="slideshow-container">
+					<div class="slideshow">
+		
+						<!-- SLIDE 1 -->
+						<div id="#slide1" class="slide s1 fade f-center">
+							<div class="window-gal flex f-center f-wrap">
+								<div class="square-gap flex f-center f-wrap">
+									<div class="flex square-gap">
+										<div class="square-gal flex f-center square-gal-1">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(2)">Les trois</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-2">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(3)">Volition</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-3">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(4)">Morphose</span>
+										</div>
+									</div>
+									<div class="flex square-gap">
+										<div class="square-gal flex f-center square-gal-4">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(5)">Néphélée</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-5">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(6)">Passage</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-6">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(7)">Gecko</span>
+										</div>
+									</div>
+								</div>
+		
+								<div class="square-gap flex f-center f-wrap">
+									<div class="flex square-gap">
+										<div class="square-gal flex f-center square-gal-7">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(8)">Evolution</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-8">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(9)">Période</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-9">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(10)">Réunion</span>
+										</div>
+									</div>
+									<div class="flex square-gap">
+										<div class="square-gal flex f-center square-gal-10">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(11)">Ensemble</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-11">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(12)">Elfe</span>
+										</div>
+										<div class="square-gal flex f-center square-gal-12">
+											<span class="square-txt-galerie flex f-center" onclick="currentSlide(13)">Division</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 2 -->
+						<div class="slide s2 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-2 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-lesTrois"></div>
+												<div class="square flex f-center square-lesTrois"></div>
+												<div class="square flex f-center square-lesTrois"></div>
+												<div class="square flex f-center square-lesTrois"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+											<div class="square flex f-center square-lesTrois"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+		
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<a href="images/LesTroisModal.jpg" target="_blank"><img class="img-modal-slide-verti" loading="lazy" src="images/LesTroisModal.jpg" alt="Peinture Les trois"></a>
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Les trois</span><br>
+											Acrylique sur toile<br>
+											50x60 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 3 -->
+						<div class="slide s3 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-3 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-volition"></div>
+												<div class="square flex f-center square-volition"></div>
+												<div class="square flex f-center square-volition"></div>
+												<div class="square flex f-center square-volition"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+											<div class="square flex f-center square-volition"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-hori" loading="lazy" src="images/VolitionModal.jpg" alt="Peinture Volition">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Volition</span><br>
+											Acrylique sur toile<br>
+											100x64 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 4 -->
+						<div class="slide s4 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-4 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-morphose"></div>
+												<div class="square flex f-center square-morphose"></div>
+												<div class="square flex f-center square-morphose"></div>
+												<div class="square flex f-center square-morphose"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+											<div class="square flex f-center square-morphose"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-verti" loading="lazy" src="images/MorphoseModal.jpg" alt="Peinture Morphose">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Morphose</span><br>
+											Acrylique sur toile<br>
+											55x63 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 5 -->
+						<div class="slide s5 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-5 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-nephelee"></div>
+												<div class="square flex f-center square-nephelee"></div>
+												<div class="square flex f-center square-nephelee"></div>
+												<div class="square flex f-center square-nephelee"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+											<div class="square flex f-center square-nephelee"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-spec" loading="lazy" src="images/NéphéléeModal.jpg" alt="Peinture Néphélée">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Néphélée</span><br>
+											Acrylique sur toile<br>
+											40x80 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 6 -->
+						<div class="slide s6 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-6 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-passage"></div>
+												<div class="square flex f-center square-passage"></div>
+												<div class="square flex f-center square-passage"></div>
+												<div class="square flex f-center square-passage"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+											<div class="square flex f-center square-passage"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-verti" loading="lazy" src="images/PassageModal.jpg" alt="Peinture Passage">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Passage</span><br>
+											Acrylique sur toile<br>
+											50x60 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 7 -->
+						<div class="slide s7 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-7 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-gecko"></div>
+												<div class="square flex f-center square-gecko"></div>
+												<div class="square flex f-center square-gecko"></div>
+												<div class="square flex f-center square-gecko"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+											<div class="square flex f-center square-gecko"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-hori" loading="lazy" src="images/GeckoModal.jpg" alt="Peinture Gecko">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Gecko</span><br>
+											Acrylique sur toile<br>
+											46x38 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 8 -->
+						<div class="slide s8 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-8 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-evolution"></div>
+												<div class="square flex f-center square-evolution"></div>
+												<div class="square flex f-center square-evolution"></div>
+												<div class="square flex f-center square-evolution"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+											<div class="square flex f-center square-evolution"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-verti" loading="lazy" src="images/EvolutionModal.jpg" alt="Peinture Evolution">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Evolution</span><br>
+											Acrylique sur toile<br>
+											73x100 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 9 -->
+						<div class="slide s9 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-9 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-periode"></div>
+												<div class="square flex f-center square-periode"></div>
+												<div class="square flex f-center square-periode"></div>
+												<div class="square flex f-center square-periode"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+											<div class="square flex f-center square-periode"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-hori" loading="lazy" src="images/PeriodeModal.jpg" alt="Peinture Période">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Période</span><br>
+											Acrylique sur toile<br>
+											100x73 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 10 -->
+						<div class="slide s10 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-10 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-reunion"></div>
+												<div class="square flex f-center square-reunion"></div>
+												<div class="square flex f-center square-reunion"></div>
+												<div class="square flex f-center square-reunion"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+											<div class="square flex f-center square-reunion"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-verti" loading="lazy" src="images/RéunionModal.jpg" alt="Peinture Réunion">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Réunion</span><br>
+											Acrylique sur toile<br>
+											60x73 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 11 -->
+						<div class="slide s11 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-11 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-ensemble"></div>
+												<div class="square flex f-center square-ensemble"></div>
+												<div class="square flex f-center square-ensemble"></div>
+												<div class="square flex f-center square-ensemble"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+											<div class="square flex f-center square-ensemble"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-spec" loading="lazy" src="images/EnsembleModal.jpg" alt="Peinture Ensemble">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Ensemble</span><br>
+											Acrylique sur toile<br>
+											40x80 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 12 -->
+						<div class="slide s12 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-12 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-elfe"></div>
+												<div class="square flex f-center square-elfe"></div>
+												<div class="square flex f-center square-elfe"></div>
+												<div class="square flex f-center square-elfe"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+											<div class="square flex f-center square-elfe"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-verti" loading="lazy" src="images/ElfeModal.jpg" alt="Peinture Elfe">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Elfe</span><br>
+											Acrylique sur toile<br>
+											73x100 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+						<!-- SLIDE 13 -->
+						<div class="slide s13 fade f-center">
+							<div class="window-1">
+								<button class="btn-img">
+									<div class="container-square flex f-center f-wrap">
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+										</div>
+		
+										<div class="flex square-gap">
+											<div class="square-gap gap-effect flex f-center">
+												<div class="opac opac-13 flex f-center">
+													<p class="square-txt">
+														Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+														praesentium aliquam quia, qui tenetur doloribus<br>
+														cum odit fuga<br>
+														explicabo ipsam corrupti eveniet rem vel laborum<br>
+														exercitationem, quidem, vitae porro enim.<br>
+													</p>
+												</div>
+												<div class="square flex f-center square-division"></div>
+												<div class="square flex f-center square-division"></div>
+												<div class="square flex f-center square-division"></div>
+												<div class="square flex f-center square-division"></div>
+											</div>
+										</div>
+		
+										<div class="square-gap flex f-center">
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+											<div class="square flex f-center square-division"></div>
+										</div>
+									</div>
+								</button>
+							</div>
+							<div class="content">
+								<div class="window-2">
+									<div class="img-container">
+										<img class="img-modal-slide-hori" loading="lazy" src="images/DivisionModal.jpg" alt="Peinture Elfe">
+									</div>
+									<div class="block-text">
+										<p class="text-modal">
+											<span class="span-text-modal">Division</span><br>
+											Acrylique sur toile<br>
+											65x50 cm
+										</p>
+									</div>
+									<button class="btn-close">X</button>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+		
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<div class="bloc-dot unselectable">
+						<span class="dot" onclick="currentSlide(1)">Galerie</span>
+						<!-- 
+								<span class="dot" onclick="currentSlide(2)">Les trois</span>
+								<span class="dot" onclick="currentSlide(3)">Volition</span>
+								<span class="dot" onclick="currentSlide(4)">Morphose</span>
+								<span class="dot" onclick="currentSlide(5)">Néphélée</span>
+								<span class="dot" onclick="currentSlide(6)">Passage</span>
+								<span class="dot" onclick="currentSlide(7)">Gecko</span>
+								<span class="dot" onclick="currentSlide(8)">Evolution</span>
+								<span class="dot" onclick="currentSlide(9)">Période</span>
+								<span class="dot" onclick="currentSlide(10)">Réunion</span>
+								<span class="dot" onclick="currentSlide(11)">Ensemble</span>
+								<span class="dot" onclick="currentSlide(12)">Elfe</span>
+								<span class="dot" onclick="currentSlide(13)">Division</span>
+								-->
+					</div>
+				</div>
+			</div>
+		
+		</section>
+
+		<!-- 
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CONTACT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+		-->
+		<section id="contact" class="container-contact column f-center">
+
+			<div class="block-avis flex f-justify-end f-align-center">
+				<p class="p-avis text-center">VOUS AVEZ UN AVIS, UNE QUESTION ?</p>
+			</div>
+
+			<div class="block-form">
+				<form class="contactForm" action="#contact">
+					<div class="champ-wrap">
+						<div class="champ column">
+							<label class="labelContact labelNom" for="nom">Nom :</label>
+							<input class="input-contact" type="text" id="nom" name="nom" required>
+						</div>
+						<div class="champ column">
+							<label class="labelContact" for="email">Email :</label>
+							<input class="input-contact" type="email" id="email" name="email" autocomplete="on" required>
+						</div>
+					</div>
+					<div class="champ-wrap">
+						<div class="champ column">
+							<label class="labelContact labelMessage" for="message">Message :</label>
+							<textarea class="input-contact" id="message" name="message" required></textarea>
+						</div>
+						<div class="text-center">
+							<input class="btn-contact" type="submit" value="Envoyer">
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<footer class="block-footer">
+				<ul>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Politique de confidentialité</a></li>
+					<li><a href="#">Politique de cookies</a></li>
+				</ul>
+			</footer>
+		</section>
+
+	</main>
+
+</body>
+</html>

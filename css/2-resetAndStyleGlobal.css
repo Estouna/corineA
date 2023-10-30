@@ -1,0 +1,130 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --------------- TEXT COLOR ----------------- */
+    --text-black: #000000;
+    --text-white: #FFFFFF;
+    --text-grey: #adadad;
+    --text-darkGrey: #706f6f;
+    --text-blue: #142f7d;
+    /* --------------- COLORS ----------------- */
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #adadad;
+    --darkGrey: #706f6f;
+    --blue: #142f7d;
+    /* --------------- SLIDER BACKGROUND ----------------- */
+    --slide-1: #000000;
+    --slide-2: #92cdf5;
+    --slide-3: #041a70;
+    --slide-4: #7d7939;
+    --slide-5: #2441b9;
+    --slide-6: #0c614c;
+    --slide-7: #a41c2a;
+    --slide-8: #d59a02;
+    --slide-9: #c4cd7c;
+    --slide-10: #7d881f;
+    --slide-11: #ec6f05;
+    --slide-12: #5397ea;  
+    --slide-13: #d03382;  
+    /* --------------- FONT-FAMILY ----------------- */
+    --font-1: 'Raleway-Light', arial, sans-serif;
+    --font-2: 'Raleway-LightItalic', arial, sans-serif;
+    --font-3: 'Photoshoot', arial, sans-serif;
+
+    --font-4: 'Roboto-Regular', arial, sans-serif;
+    --font-5: 'Roboto-Light', arial, sans-serif;
+    --font-6: 'Roboto-LightItalic', arial, sans-serif;
+    --font-7: 'Roboto-Thin', arial, sans-serif;
+    --font-8: 'Roboto-ThinItalic', arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    min-height: 100dvh; 
+    overflow: hidden;
+}
+
+body, input, button, textarea, select {font-size: calc(12px + 0.35vw);}
+
+textarea{resize: none;}
+
+ul {list-style-type: none;}
+
+h1, h2, h3, h4, h5, h6 {font-family: var(--font-5);}
+
+p, a, button, input, textarea, div {font-family: var(--font-5);}
+
+main {width: 100%;}
+
+p {letter-spacing: 0.5px;}
+
+a {
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*
+------------------------------------------------------ FLEXBOX AND TEXT------------------------------------------------------
+*/
+.flex {display: flex;}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------ FLEX-WRAP ------------*/
+.f-wrap {flex-wrap: wrap;}
+.f-nowrap {flex-wrap: nowrap;}
+
+/*------------ FLEX-WRAP ------------*/
+.f-grow-1 {flex-grow: 1;}
+.f-grow-2 {flex-grow: 2;}
+
+/*------------ JUSTIFY-CONTENT ------------*/
+.f-justify-start {justify-content: flex-start;}
+.f-justify-center {justify-content: center;}
+.f-justify-end {justify-content: flex-end;}
+.f-justify-between {justify-content: space-between;}
+.f-justify-around {justify-content: space-around;}
+.f-justify-evenly {justify-content: space-evenly;}
+
+/*------------ ALIGN-ITEMS ------------*/
+.f-align-start {align-items: flex-start;}
+.f-align-center {align-items: center;}
+.f-align-end {align-items: flex-end;}
+
+.f-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
