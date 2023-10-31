@@ -1,23 +1,12 @@
-/* 
-    ACCUEIL
-*/
-#home {
-    /* position: relative; */
-    /* background-image: url('../images/BandeauAccueil.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-}
-
 .p-home {
     font-family: var(--font-3);
     font-size: calc(13px + 1.5vw);
     color: var(--text-darkGrey);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     /* margin-bottom: 13vh; */
 }
-
-
-
 
 .background {
     position: fixed;
@@ -25,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/FondPeinture.jpg');
+    background-image: url('../images/TableauCadragePara.jpg');
     background-size: 100%;
     z-index: -1;
 }
@@ -44,4 +33,41 @@
     height: calc(200px + 14vw);
     box-shadow:  inset 0 -5px 10px rgba(0, 0, 0, 0.4), 
     inset 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.p-home span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow-wrap: normal;
+}
+
+.p-home span.active {
+    animation: smoke 3s linear forwards;
+    /*Par défaut l'origine de transform est center*/
+    transform-origin: bottom;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1;
+        color: rgb(167, 167, 167);
+        filter: blur(0);
+        transform: translateX(0) translateY(0px) rotate(0deg) scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        color: white;
+        /*Lettres partent en fumée plus tard*/
+        /* filter: blur(0); */
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 0;
+        color: white;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
 }
