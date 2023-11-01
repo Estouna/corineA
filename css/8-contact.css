@@ -1,31 +1,24 @@
-#contact {
-    position: relative;
-    background-image: url('../images/BandeauAccueiCentre.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: calc(20px + 1.5vw) 0 0;
-}
-
 .block-form {
+    top: 0;
+    left: 7%;
     width: 100%;
-    padding: 5px 0 5px calc(1px + 7vw);
+    z-index: 1;
 }
 
 .block-avis {
     width: 100%;
-    padding: 5px calc(1px + 7vw) 50px 0;
+    padding-right: calc(1px + 7vw);
 }
 
 .p-avis {
-    font-size: calc(8px + 0.9vw);
+    font-size: calc(10px + 0.9vw);
     letter-spacing: 1px;
 }
 
 .contactForm {
     width: calc(200px + 30vw);
     background-color: rgba(255, 255, 255, 0.85);
-    padding: calc(40px + 1.5vw) calc(20px + 1.5vw);
+    padding: calc(10px + 1.5vw) calc(10px + 1.5vw);
     border-radius: 5px;
 }
 
@@ -65,11 +58,11 @@
 
 #nom,
 #email {
-    height: calc(25px + 1vw);
+    height: calc(20px + 1vw);
 }
 
 #message {
-    height: calc(80px + 6vw);
+    height: calc(60px + 6vw);
 }
 
 .btn-contact {
@@ -78,7 +71,7 @@
     color: var(--text-white);
     transition: 0.5s;
     padding: 10px 30px;
-    margin-top: 14px;
+    margin-top: calc(30px + 4vw);
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -89,7 +82,6 @@
 }
 
 .block-footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;

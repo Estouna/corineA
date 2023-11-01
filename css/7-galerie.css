@@ -7,9 +7,10 @@
 }
 
 .slideshow-container {
+    position: relative;
     overflow: hidden;
     min-height: 100vh;
-    position: relative;
+    min-height: 100svh;
 }
 
 .slideshow {
@@ -41,10 +42,10 @@
 /* ------------------------- MENU SLIDER -------------------------*/
 .bloc-dot {
     position: absolute;
-    font-family: var(--font-5);
+    font-family: var(--font-3);
     text-align: center;
     width: 100%;
-    top: 19%;
+    top: 20%;
 }
 
 .dot {
@@ -100,8 +101,8 @@
 }
 
 .square {
-    width: calc(35px + 5vw);
-    height: calc(35px + 5vw);
+    width: calc(35px + 6vw);
+    height: calc(35px + 6vw);
 }
 
 .square-gap {gap: calc(6px + 0.8vw);}

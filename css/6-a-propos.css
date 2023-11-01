@@ -1,17 +1,8 @@
-#a-propos {
-    position: relative;
-    background-image: url('../images/BandeauAccueiCentre.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .block-corine {
+    bottom: 0;
+    right: 7%;
     background-color: rgba(255, 255, 255, 0.85);
-    padding: calc(6px + 0.6vw) calc(6px + 0.6vw) calc(190px + 0.7vw) calc(6px + 0.6vw);
-    margin:  0 calc(1px + 7vw) 0 0;
+    padding: calc(2px + 0.6vw) calc(2px + 0.6vw) calc(83px + 0.6vw);
 }
 
 .block-titre {
@@ -25,7 +16,7 @@
 }
 
 .ligne-presentation {
-    width: 454px;
+    width: 100%;
     height: 1px;
     background-color: var(--black);
     margin: 4px 0 8px;

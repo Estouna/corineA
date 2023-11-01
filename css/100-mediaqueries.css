@@ -3,21 +3,31 @@
 */
 
 /* 
+    ______________________________ MAX-WIDTH 1800px ______________________________
+*/
+@media only screen and (max-width: 1800px) {
+
+        /*SECTIONS*/
+        .background-section {
+            background-size: 110%;
+        }
+
+}
+
+/* END MAX-WIDTH 1800px ______________________________*/
+
+
+/* 
     ______________________________ MAX-WIDTH 1300px ______________________________
 */
 @media only screen and (max-width: 1300px) {
 
-    /*SECTION A PROPOS*/
-    .background {
+    /*SECTIONS*/
+    .background-section {
         background-size: 150%;
     }
+
     /*SECTION A PROPOS*/
-    .block-corine {
-        padding: 0 0 calc(130px + 0.6vw) 0;
-        margin: 0 calc(1px + 7vw) 0 0;
-    }
-
-
     .h1-a-propos {
         font-size: 22px;
     }
@@ -51,27 +61,24 @@
 
 
 /* 
+    ______________________________ MAX-WIDTH 1100px ______________________________
+*/
+@media only screen and (max-width: 1100px) {
+
+    /*SECTIONS*/
+    .background-section {
+        background-size: 190%;
+    }
+
+}
+
+/* END MAX-WIDTH 1100px ______________________________*/
+
+
+/* 
     ______________________________ MAX-WIDTH 768px ______________________________
 */
 @media only screen and (max-width: 799px) {
-
-    /*main and section*/
-    /*Passe la gestion du scroll en css (trop de problèmes de compatibilité navigateur avec tactile en javascript)*/
-    main {
-        width: 100%;
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        width: 100%;
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-    }
 
     /*NAVBAR*/
     .header-nav {
@@ -127,10 +134,34 @@
         box-shadow: none;
     }
 
+    /*main and section*/
+    /*Passe la gestion du scroll en css (trop de problèmes de compatibilité navigateur avec tactile en javascript)*/
+    main {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    /*SECTION HOME*/
-    .background {
-        background-size: 190%;
+    section {
+        width: 100%;
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+    }
+
+    /*SECTIONS*/
+    .background-section {
+        background-size: 280%;
+    }
+
+    /*SECTION A PROPOS*/
+    .block-corine {
+        bottom: 0;
+        right: 7%;
+        padding: calc(6px + 0.6vw) 0 calc(35px + 0.7vw) 0;
     }
 
     /*SECTION GALERIE*/
@@ -145,6 +176,7 @@
         margin-top: 14%;
     }
 
+    /*Désactive :hover*/
     .square-txt-galerie {
         opacity: 1;
     }
@@ -152,7 +184,18 @@
     .square-gal:before {
         opacity: 0.6;
     }
-    
+
+    .square-gal:hover:before {opacity: 0.6;}
+    .opac:hover {opacity: 0;}
+    .gap-effect:hover {gap: calc(6px + 0.8vw);}
+
+    /*SECTION CONTACT*/
+    .input-contact {
+        border: 2px double var(--white);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
 }
 
 /* END MAX-WIDTH 768px ______________________________*/
@@ -163,21 +206,21 @@
 */
 @media only screen and (max-width: 500px) {
 
-    /*SECTION HOME*/
-    .background {
-        background-size: 270%;
+    /*SECTIONS*/
+    .background-section {
+        background-size: 360%;
+    }
+
+    .item:nth-child(1),
+    .item:nth-child(3) {
+        height: 30%;
+    }
+
+    .item:nth-child(2) {
+        height: 40%;
     }
 
     /*SECTION A PROPOS*/
-    #a-propos {
-        justify-content: center;
-    }
-
-    .block-corine {
-        margin: 0;
-    }
-
-
     .h1-a-propos {
         font-size: 20px;
     }
@@ -201,26 +244,9 @@
         margin-top: 17%;
     }
 
-    /*SECTION CONTACT*/
-    .container-contact {
-        grid-template-rows: 40px 80px 1fr 40px;
-        grid-template-areas:
-            "block-titre-contact-bis block-titre-contact-bis block-titre-contact-bis"
-            "block-blue-bis block-blue-bis block-blue-bis"
-            "block-form-bis block-form-bis block-form-bis"
-            "block-footer block-footer block-footer";
-    }
-
-    .input-contact {
-        border: 2px double var(--white);
-        border-radius: 5px;
-        padding: 10px;
-    }
-
+    /* SECTION CONTACT */
     .btn-contact {
-        font-size: calc(10px + 0.3vw);
-        padding: 5px 30px;
-        margin-top: 10px;
+        padding: 8px 20px;
     }
 
 }
@@ -233,13 +259,20 @@
 */
 @media only screen and (max-width: 360px) {
 
+    /* SECTIONS */
+    .background-section {
+        background-size: 420%;
+    }
+
     /* SECTION HOME */
     .p-home {
         font-size: 17px;
     }
 
-    .background {
-        background-size: 270%;
+    /*SECTION A PROPOS*/
+    .block-corine {
+        right: 0;
+        padding: calc(6px + 0.6vw) 0 calc(30px + 0.7vw) 0;
     }
 
     /* SECTION GALERIE */
@@ -250,14 +283,10 @@
 
     /* SECTION CONTACT */
     .block-form {
+        left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px 0;
-    }
-
-    .block-avis {
-        padding: 5px 10px 5px 0;
     }
 
 }
@@ -268,7 +297,6 @@
 /* 
    ******************************************************* END WIDTH *******************************************************
 */
-
 
 
 
@@ -288,17 +316,8 @@
         width: calc(70px + 4.5vw);
     }
 
-    /* SECTION HOME */
-    .p-home {
-        margin-bottom: 11vh;
-    }
-
     /* SECTION GALERIE */
     /* Slider position groupes de carrés*/
-    .bloc-dot {
-        top: 15%;
-    }
-
     .prev, .next {
         top: 43%;
     }
@@ -313,8 +332,8 @@
     }
 
     .square {
-        width: calc(35px + 5vw);
-        height: calc(35px + 5vw);
+        width: calc(30px + 5vw);
+        height: calc(30px + 5vw);
     }
 
     /* end */
@@ -339,32 +358,12 @@
     }
 
      /*SECTION A PROPOS*/
-     #a-propos {
-        justify-content: flex-end;
-        align-items: center;
-    }
-
     .block-corine {
-        padding: 2px;
-        margin: 30px calc(1px + 7vw) 0 0;
-        padding-bottom: 120px;
-    }
-
-    .block-titre {
-        width: 100%;
+        padding-bottom: 50px;
     }
 
     .h1-a-propos {
         font-size: 15px;
-        font-weight: normal;
-        letter-spacing: 1px;
-    }
-
-    .ligne-presentation {
-        width: 300px;
-        height: 1px;
-        background-color: var(--black);
-        margin: 4px 0 8px;
     }
 
     .h2-a-propos {
@@ -374,30 +373,22 @@
     }
 
     .block-photo-text {
-        padding: 35px 2px 2px;
+        padding: 50px 5px 5px;
     }
 
     .photo {
-        position: relative;
         width: 60px;
         height: 50px;
-        float: left;
-        margin: 0 0.5em 0.5em 0;
     }
 
     .img-corine {
-        position: absolute;
         max-width: 55px;
         top: -30px;
-        left: 0;
-        height: auto;
     }
 
     .p-presentation {
-        width: 100%;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 15px;
-        letter-spacing: 0;
     }
     
     /* SECTION CONTACT */
@@ -406,17 +397,19 @@
         gap: 3px;
     }
 
+    .contactForm {
+        padding: 8px calc(10px + 1.5vw);
+    }
+
     .block-form {
-        padding-top: 0;
-        justify-self: center;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .p-contact {
         font-size: 14px;
-    }
-
-    .contactForm {
-        padding: 10px 5px;
     }
 
     .labelContact {
@@ -430,13 +423,6 @@
     #nom,
     #email {
         font-size: calc(7px + 0.3vw);
-        height: 25px;
-        padding: 5px;
-    }
-
-    #message {
-        height: 60px;
-        padding: 5px;
     }
 
     .btn-contact {
@@ -482,25 +468,26 @@
     }
 
     .square {
-        width: calc(35px + 5vw);
-        height: calc(35px + 5vw);
+        width: calc(25px + 5vw);
+        height: calc(25px + 5vw);
     }
     /* end Slider position*/
 
     /*SECTION A PROPOS*/
     .block-corine {
-        padding-bottom: 50px;
+        top: -20px;
+        padding-bottom: 0;
     }
 
     /*SECTION CONTACT*/
-    .block-avis {
-        padding: 5px calc(1px + 7vw) 2px 0;
+    .block-form {
+        top: 10%;
     }
-    
+
     .p-avis {
         padding: 2px 4px;
         background-color: rgba(255, 255, 255, 0.85);
-        border-radius: 2px;   
+        border-radius: 2px; 
     }
     
     .contactForm {
@@ -518,14 +505,6 @@
         margin-top: 0;
     }
 
-    #message {
-        height: calc(60px + 6vw);
-    }
-
-    #nom,
-    #email {
-        height: calc(20px + 1vw);
-    }
 }
 
 /* END MAX-HEIGHT 500px______________________________*/
@@ -533,27 +512,17 @@
 
 /* Taille (à peu près) avec le menu navigateur firefox en mode landscape (320 - 55 = 265)*/
 /* 
-    ______________________________ MAX-HEIGHT 320px ______________________________
+    ______________________________ MAX-HEIGHT 360px ______________________________
 */
 
-@media only screen and (max-height: 320px) {
-
-    /*SECTION HOME*/
-    .p-home {
-        margin-bottom: 10vh;
-    }
-
-    /*SECTION A PROPOS*/
-    .block-corine {
-        padding-bottom: 20px;
-    }
+@media only screen and (max-height: 360px) {
 
     /*SECTION A GALERIE*/
     .square {
-        width: calc(30px + 5vw);
-        height: calc(30px + 5vw);
+        width: calc(15px + 5vw);
+        height: calc(15px + 5vw);
     }
 
 }
 
-/* END MAX-HEIGHT 320px______________________________*/
+/* END MAX-HEIGHT 360px______________________________*/

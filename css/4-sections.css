@@ -1,0 +1,35 @@
+section {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.background-section {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/TableauCadragePara.jpg');
+    background-size: 105%;
+    z-index: -1;
+}
+
+.container-section {
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+    height: 23%;
+    background-color: var(--white);
+}
+
+.item:nth-child(2) {
+    height: 54%;
+    box-shadow:  inset 0 -5px 10px rgba(0, 0, 0, 0.4), 
+    inset 0 5px 10px rgba(0, 0, 0, 0.4);
+}
