@@ -20,7 +20,7 @@
 }
 
 .nav-main a {
-    font-size: calc(15px + 0.1vw);
+    font-size: calc(14px + 0.2vw);
     letter-spacing: 1px;
     display: block;
     padding: 4px 6px;
@@ -35,7 +35,7 @@
 }
 
 .nav-main a.active {
-    box-shadow: 0 1px 0 0 var(--blue)
+    box-shadow: 0 1px 0 0 var(--blue);
 }
 
 .burger {

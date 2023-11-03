@@ -7,7 +7,7 @@
 
 .block-avis {
     width: 100%;
-    padding-right: calc(1px + 7vw);
+    padding: 0 calc(1px + 7vw) calc(1px + 0.5vw) 0;
 }
 
 .p-avis {
@@ -17,7 +17,7 @@
 
 .contactForm {
     width: calc(200px + 30vw);
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: calc(10px + 1.5vw) calc(10px + 1.5vw);
     border-radius: 5px;
 }

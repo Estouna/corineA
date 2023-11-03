@@ -7,20 +7,25 @@
 }
 
 :root {
+    /* --------------- FONT-FAMILY ----------------- */
+    --font-1: 'Roboto-Light', arial, sans-serif;
+    --font-2: 'Roboto-LightItalic', arial, sans-serif;
+    --font-3: 'Photoshoot', arial, sans-serif;
     /* --------------- TEXT COLOR ----------------- */
     --text-black: #000000;
-    --text-white: #FFFFFF;
+    --text-white: #ffffff;
     --text-grey: #adadad;
     --text-darkGrey: #706f6f;
     --text-blue: #142f7d;
     /* --------------- COLORS ----------------- */
-    --black: #000000;
-    --white: #FFFFFF;
+    --black: #111111;
+    --white: #ffffff;
     --grey: #adadad;
     --darkGrey: #706f6f;
     --blue: #142f7d;
     /* --------------- SLIDER BACKGROUND ----------------- */
-    --slide-1: #000000;
+    /* --slide-1: #0f0f0f; */
+    --slide-1: #ffffff;
     --slide-2: #964d18;
     --slide-3: #041a70;
     --slide-4: #7d7939;
@@ -33,16 +38,6 @@
     --slide-11: #ec6f05;
     --slide-12: #5397ea;  
     --slide-13: #d03382;  
-    /* --------------- FONT-FAMILY ----------------- */
-    --font-1: 'Raleway-Light', arial, sans-serif;
-    --font-2: 'Raleway-LightItalic', arial, sans-serif;
-    --font-3: 'Photoshoot', arial, sans-serif;
-
-    --font-4: 'Roboto-Regular', arial, sans-serif;
-    --font-5: 'Roboto-Light', arial, sans-serif;
-    --font-6: 'Roboto-LightItalic', arial, sans-serif;
-    --font-7: 'Roboto-Thin', arial, sans-serif;
-    --font-8: 'Roboto-ThinItalic', arial, sans-serif;
 }
 
 html {
@@ -66,15 +61,22 @@ textarea{resize: none;}
 
 ul {list-style-type: none;}
 
-h1, h2, h3, h4, h5, h6 {font-family: var(--font-5);}
+h1, h2, h3, h4, h5, h6 {font-family: var(--font-1);}
 
-p, a, button, input, textarea, div {font-family: var(--font-5);}
+p, a, button, input, textarea, div {font-family: var(--font-1);}
 
 
 p {letter-spacing: 0.5px;}
 
 a {
     text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -93,12 +95,6 @@ a {
     position: fixed;
 }
 
-.unselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 /*
 ------------------------------------------------------ FLEXBOX AND TEXT------------------------------------------------------
@@ -124,17 +120,17 @@ a {
 .f-grow-2 {flex-grow: 2;}
 
 /*------------ JUSTIFY-CONTENT ------------*/
-.f-justify-start {justify-content: flex-start;}
-.f-justify-center {justify-content: center;}
-.f-justify-end {justify-content: flex-end;}
-.f-justify-between {justify-content: space-between;}
-.f-justify-around {justify-content: space-around;}
-.f-justify-evenly {justify-content: space-evenly;}
+.f-just-start {justify-content: flex-start;}
+.f-just-center {justify-content: center;}
+.f-just-end {justify-content: flex-end;}
+.f-just-between {justify-content: space-between;}
+.f-just-around {justify-content: space-around;}
+.f-just-evenly {justify-content: space-evenly;}
 
 /*------------ ALIGN-ITEMS ------------*/
-.f-align-start {align-items: flex-start;}
-.f-align-center {align-items: center;}
-.f-align-end {align-items: flex-end;}
+.f-alig-start {align-items: flex-start;}
+.f-alig-center {align-items: center;}
+.f-alig-end {align-items: flex-end;}
 
 .f-center {
     justify-content: center;

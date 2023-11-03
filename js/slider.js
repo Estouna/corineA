@@ -13,7 +13,6 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
-  let dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) { 
     slideIndex = 1 
@@ -24,12 +23,8 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
 
   slides[slideIndex - 1].style.display = "flex";
-  // dots[slideIndex - 1].className += " active";
 }
 
 // Clic pour ouvrir la fenêtre du slider

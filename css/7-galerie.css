@@ -40,24 +40,23 @@
 
 
 /* ------------------------- MENU SLIDER -------------------------*/
-.bloc-dot {
+.box-home-slider {
     position: absolute;
-    font-family: var(--font-3);
     text-align: center;
     width: 100%;
     top: 20%;
 }
 
-.dot {
-    font-size: calc(14px + 0.5vw);
+.home-slider {
+    font-family: var(--font-3);
+    font-size: calc(13px + 0.5vw);
     cursor: pointer;
     display: inline-block;
     transition: 0.6s;
     color: white;
 }
 
-.dot:hover {color: rgba(255, 255, 255, 0.493);}
-.dot.active {border-bottom: 1px solid var(--white);}
+.home-slider:hover {color: rgba(255, 255, 255, 0.493);}
 
 /* Fading animation */
 .fade {
@@ -96,8 +95,9 @@
 }
 
 .square-gal {
-    width: calc(55px + 5vw);
-    height: calc(55px + 5vw);
+    color: var(--text-black);
+    width: calc(80px + 5vw);
+    height: calc(80px + 5vw);
 }
 
 .square {
@@ -154,6 +154,7 @@
 
 .square-txt {
     font-size: calc(8px + 0.35vw);
+    text-align: center;
     width: 100%;
 }
 
@@ -263,7 +264,7 @@
 }
 
 .span-text-modal {
-    font-family: var(--font-6);
+    font-family: var(--font-2);
     font-size: calc(16px + 0.4vw);
 }
 
@@ -273,17 +274,17 @@
 }
 
 .img-modal-slide-verti {
-    width: calc(250px + 19vw);
+    width: calc(230px + 20vw);
     height: auto;
 }
 
 .img-modal-slide-hori {
-    width: calc(180px + 41vw);
+    width: calc(130px + 50vw);
     height: auto;
 }
 
 .img-modal-slide-spec {
-    width: calc(200px + 11vw);
+    width: calc(180px + 13vw);
     height: auto;
 }
 

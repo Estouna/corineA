@@ -15,11 +15,16 @@
     overflow-wrap: normal;
 }
 
+.p-home span:nth-child(1) {
+    letter-spacing: -5px;
+}
+
 .p-home span.active {
     animation: smoke 3s linear forwards;
     /*Par défaut l'origine de transform est center*/
     transform-origin: bottom;
 }
+
 
 @keyframes smoke {
     0% {

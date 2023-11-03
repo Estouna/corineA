@@ -1,25 +1,4 @@
 @font-face {
-    font-family: "Raleway-Light";
-    src: url("../fonts/Raleway-Light.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "Raleway-LightItalic";
-    src: url("../fonts/Raleway-LightItalic.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "Photoshoot";
-    src: url("../fonts/Photoshoot.ttf") format('truetype');
-}
-
-
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url("../fonts/Roboto-Regular.ttf") format('truetype');
-}
-
-@font-face {
     font-family: "Roboto-Light";
     src: url("../fonts/Roboto-Light.ttf") format('truetype');
 }
@@ -30,11 +9,7 @@
 }
 
 @font-face {
-    font-family: "Roboto-Thin";
-    src: url("../fonts/Roboto-Thin.ttf") format('truetype');
+    font-family: "Photoshoot";
+    src: url("../fonts/Photoshoot.ttf") format('truetype');
 }
 
-@font-face {
-    font-family: "Roboto-ThinItalic";
-    src: url("../fonts/Roboto-ThinItalic.ttf") format('truetype');
-}

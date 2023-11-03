@@ -2,7 +2,7 @@
     bottom: 0;
     right: 7%;
     background-color: rgba(255, 255, 255, 0.85);
-    padding: calc(2px + 0.6vw) calc(2px + 0.6vw) calc(83px + 0.6vw);
+    padding: calc(2px + 0.6vw) calc(2px + 0.6vw) calc(88px + 0.6vw);
 }
 
 .block-titre {
@@ -13,6 +13,7 @@
     font-size: 30px;
     font-weight: normal;
     letter-spacing: 1px;
+    margin-bottom: 6px;
 }
 
 .ligne-presentation {
