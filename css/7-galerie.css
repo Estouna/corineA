@@ -121,7 +121,10 @@
     z-index: 2;
 }
 
-.square-txt-galerie {transition: 1s;}
+.square-txt-galerie {
+    font-size: calc(19px + 0.35vw);
+    transition: 1s;
+}
 .square-txt-galerie:hover {opacity: 1;}
 .square-gal:hover:before {opacity: 0.3;}
 

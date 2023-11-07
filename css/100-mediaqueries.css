@@ -378,6 +378,7 @@
 
     /*Désactive :hover*/
     .square-txt-galerie {
+        text-shadow: 1px 1px 3px var(--text-black);
         opacity: 1;
     }
     
@@ -534,6 +535,10 @@
     .square {
         width: calc(30px + 5vw);
         height: calc(30px + 5vw);
+    }
+
+    .square-txt-galerie {
+        font-size: calc(12px + 0.35vw);
     }
 
     /* end */
