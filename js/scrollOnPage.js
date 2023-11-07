@@ -1,5 +1,5 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll(".navbar__link");
 const mediaQueryScrollOnPage = window.matchMedia('(min-width: 800px)');
 
 if (mediaQueryScrollOnPage.matches) {

@@ -7,51 +7,53 @@
 */
 @media only screen and (min-width: 2560px) and (max-width: 5000px) {
 
-    body, input, button, textarea, select {font-size: calc(30px + 0.35vw);}
+    body,
+    input,
+    button,
+    textarea,
+    select {
+        font-size: calc(30px + 0.35vw);
+    }
 
     /*NAVBAR*/
-    .nav-main a, a {
+    .navbar__link {
         font-size: calc(26px + 0.35vw);
     }
 
-    .logo {
+    .navbar__logo {
         width: calc(120px + 4.5vw);
     }
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 140%;
     }
 
     /*SECTIONS A PROPOS*/
-    .block-corine {
+    .card {
         padding: calc(102px + 1vw) calc(2px + 0.6vw) calc(190px + 1vw);
     }
-    
-    .h1-a-propos {
+
+    .card__h1 {
         font-size: 55px;
         letter-spacing: 2px;
     }
-    
-    .ligne-presentation {
-        margin: 6px 0 8px;
-    }
-    
-    .h2-a-propos {
+
+    .card__h2 {
         font-size: 43px;
         letter-spacing: 2px;
     }
-    
-    .photo {
+
+    .card__div--photo {
         width: 200px;
         height: 220px;
     }
-    
-    .img-corine {
+
+    .card__img {
         max-width: 200px;
     }
-    
-    .p-presentation {
+
+    .card__p {
         font-size: 35px;
         line-height: 65px;
     }
@@ -62,14 +64,14 @@
         font-size: calc(60px + 0.9vw);
     }
 
-    .home-slider {
+    .slide__a--btnGalerie  {
         font-size: calc(30px + 0.5vw);
     }
 
     .container-square {
         width: calc(300px + 30vw);
     }
-    
+
     .square-gal {
         width: calc(160px + 5vw);
         height: calc(160px + 5vw);
@@ -96,11 +98,11 @@
     .img-modal-slide-verti {
         width: calc(750px + 19vw);
     }
-    
+
     .img-modal-slide-hori {
         width: calc(950px + 41vw);
     }
-    
+
     .img-modal-slide-spec {
         width: calc(580px + 11vw);
     }
@@ -115,7 +117,7 @@
     .block-avis {
         padding: 0 calc(1px + 7vw) calc(10px + 0.5vw) 0;
     }
-    
+
     .p-avis {
         font-size: calc(25px + 0.9vw);
         letter-spacing: 2px;
@@ -152,31 +154,31 @@
 /* 
     ______________________________ MIN-WIDTH 2560px AND MAX-WIDTH 3839px ______________________________
 */
-@media only screen and (min-width: 2560px) and (max-width: 3839px){
+@media only screen and (min-width: 2560px) and (max-width: 3839px) {
 
     /*SECTIONS A PROPOS*/
-    .block-corine {
+    .card {
         padding: calc(2px + 1vw) calc(2px + 0.6vw) calc(60px + 1vw);
     }
-    
-    .h1-a-propos {
+
+    .card__h1 {
         font-size: 45px;
     }
-    
-    .h2-a-propos {
+
+    .card__h2 {
         font-size: 33px;
     }
-    
-    .photo {
+
+    .card__div--photo {
         width: 180px;
         height: 200px;
     }
-    
-    .img-corine {
+
+    .card__img {
         max-width: 180px;
     }
-    
-    .p-presentation {
+
+    .card__p {
         font-size: 29px;
         line-height: 55px;
     }
@@ -209,7 +211,7 @@
 @media only screen and (max-width: 1800px) {
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 110%;
     }
 
@@ -224,34 +226,30 @@
 @media only screen and (max-width: 1300px) {
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 150%;
     }
 
     /*SECTION A PROPOS*/
-    .h1-a-propos {
+    .card__h1 {
         font-size: 22px;
     }
 
-    .ligne-presentation {
-        width: 342px;
-    }
-
-    .h2-a-propos {
+    .card__h2 {
         font-size: 13px;
     }
 
-    .photo {
+    .card__div--photo {
         width: 90px;
         height: 70px;
     }
 
-    .img-corine {
+    .card__img {
         top: -56px;
         max-width: 90px;
     }
 
-    .p-presentation {
+    .card__p {
         font-size: 12px;
         line-height: 24px;
     }
@@ -267,7 +265,7 @@
 @media only screen and (max-width: 1100px) {
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 190%;
     }
 
@@ -287,11 +285,11 @@
         align-items: center;
     }
 
-    .nav-main {
+    .navbar {
         background-color: transparent;
     }
 
-    .nav-main-ul {
+    .navbar__ul {
         position: fixed;
         padding: 10px 0;
         left: -105%;
@@ -303,35 +301,35 @@
         background-color: var(--white);
     }
 
-    .nav-main-ul.active {
+    .navbar__ul.active {
         left: 0;
     }
 
-    .nav-main-li {
+    .navbar__li {
         margin: 5px 0;
     }
 
-    .nav-main-li-span {
+    .navbar__li--span {
         display: none;
     }
 
-    .burger {
+    .navbar__div--burger {
         display: block;
     }
 
-    .burger.active .bar:nth-child(2) {
+    .navbar__div--burger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .burger.active .bar:nth-child(1) {
+    .navbar__div--burger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .burger.active .bar:nth-child(3) {
+    .navbar__div--burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-main a.active {
+    .navbar__link.active {
         box-shadow: none;
     }
 
@@ -353,12 +351,12 @@
     }
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 280%;
     }
 
     /*SECTION A PROPOS*/
-    .block-corine {
+    .card {
         bottom: 0;
         right: 7%;
         padding: calc(6px + 0.6vw) 0 calc(35px + 0.7vw) 0;
@@ -372,7 +370,8 @@
     }
 
     /* Slider position flèches et groupes de carrés*/
-    .window-gal, .window-1 {
+    .window-gal,
+    .window-1 {
         margin-top: 14%;
     }
 
@@ -381,14 +380,22 @@
         text-shadow: 1px 1px 3px var(--text-black);
         opacity: 1;
     }
-    
+
     .square-gal:before {
         opacity: 0.6;
     }
 
-    .square-gal:hover:before {opacity: 0.6;}
-    .opac:hover {opacity: 0;}
-    .gap-effect:hover {gap: calc(6px + 0.8vw);}
+    .square-gal:hover:before {
+        opacity: 0.6;
+    }
+
+    .opac:hover {
+        opacity: 0;
+    }
+
+    .gap-effect:hover {
+        gap: calc(6px + 0.8vw);
+    }
 
     /*SECTION CONTACT*/
     .input-contact {
@@ -408,40 +415,37 @@
 @media only screen and (max-width: 500px) {
 
     /*SECTIONS*/
-    .background-section {
+    .section__div--parallaxe {
         background-size: 360%;
     }
 
-    .item:nth-child(1),
-    .item:nth-child(3) {
+    .section__div--item:nth-child(1),
+    .section__div--item:nth-child(3) {
         height: 30%;
     }
 
-    .item:nth-child(2) {
+    .section__div--item:nth-child(2) {
         height: 40%;
     }
 
     /*SECTION A PROPOS*/
-    .h1-a-propos {
+    .card__h1 {
         font-size: 20px;
     }
 
-    .ligne-presentation {
-        width: 320px;
-    }
-
-    .h2-a-propos {
+    .card__h2 {
         font-size: 11px;
     }
 
-    .p-presentation {
+    .card__p {
         font-size: 11px;
         line-height: 22px;
     }
 
     /*SECTION GALERIE*/
     /* Slider position flèches et groupes de carrés*/
-    .window-gal, .window-1 {
+    .window-gal,
+    .window-1 {
         margin-top: 17%;
     }
 
@@ -461,24 +465,25 @@
 @media only screen and (max-width: 360px) {
 
     /* SECTIONS */
-    .background-section {
+    .section__div--parallaxe {
         background-size: 420%;
     }
 
     /* SECTION HOME */
-    .p-home {
+    .section__p {
         font-size: 17px;
     }
 
     /*SECTION A PROPOS*/
-    .block-corine {
+    .card {
         right: 0;
         padding: calc(6px + 0.6vw) 0 calc(30px + 0.7vw) 0;
     }
 
     /* SECTION GALERIE */
     /* Slider position flèches et groupes de carrés*/
-    .window-gal, .window-1 {
+    .window-gal,
+    .window-1 {
         margin-top: 20%;
     }
 
@@ -512,18 +517,25 @@
 
 @media only screen and (max-height: 599px) {
 
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 170%;
+    }
+
     /* NAVBAR*/
-    .logo {
+    .navbar__logo {
         width: calc(70px + 4.5vw);
     }
 
     /* SECTION GALERIE */
     /* Slider position groupes de carrés*/
-    .prev, .next {
+    .prev,
+    .next {
         top: 43%;
     }
 
-    .window-gal, .window-1 {
+    .window-gal,
+    .window-1 {
         margin-top: 6%;
     }
 
@@ -562,42 +574,42 @@
         padding-top: 0;
     }
 
-     /*SECTION A PROPOS*/
-    .block-corine {
+    /*SECTION A PROPOS*/
+    .card {
         padding-bottom: 50px;
     }
 
-    .h1-a-propos {
+    .card__h1 {
         font-size: 15px;
     }
 
-    .h2-a-propos {
+    .card__h2 {
         font-size: 8.5px;
         font-weight: normal;
         letter-spacing: 2px;
     }
 
-    .block-photo-text {
+    .card__div--photo-text {
         padding: 50px 5px 5px;
     }
 
-    .photo {
+    .card__div--photo {
         width: 60px;
         height: 50px;
     }
 
-    .img-corine {
+    .card__img {
         max-width: 55px;
         top: -30px;
     }
 
-    .p-presentation {
+    .card__p {
         font-size: 11px;
         line-height: 15px;
     }
-    
+
     /* SECTION CONTACT */
-    .container-contact{
+    #contact {
         padding: 0;
         gap: 3px;
     }
@@ -650,21 +662,21 @@
         padding: 4px 10px 2px 20px;
     }
 
-    .nav-main {
+    .navbar {
         padding: 2px;
     }
-    
-    .logo {
+
+    .navbar__logo {
         width: calc(50px + 4.5vw);
     }
 
-    .nav-main-ul {
+    .navbar__ul {
         top: 38px;
     }
-    
+
     /* SECTION GALERIE */
-    .dot {
-        font-size: 12px;
+    .slide__a--btnGalerie  {
+        font-size: calc(10px + 0.35vw);
     }
 
     .square-gal {
@@ -676,10 +688,11 @@
         width: calc(25px + 5vw);
         height: calc(25px + 5vw);
     }
+
     /* end Slider position*/
 
     /*SECTION A PROPOS*/
-    .block-corine {
+    .card {
         top: -20px;
         padding-bottom: 0;
     }
@@ -692,21 +705,22 @@
     .p-avis {
         padding: 2px 4px;
         background-color: rgba(255, 255, 255, 0.85);
-        border-radius: 2px; 
+        border-radius: 2px;
     }
-    
+
     .contactForm {
         display: flex;
         justify-content: space-around;
         padding: 10px 5px;
-        gap:5px;
+        gap: 5px;
     }
 
     .champ-wrap {
         width: 48%;
     }
-    
-    .labelNom, .labelMessage {
+
+    .labelNom,
+    .labelMessage {
         margin-top: 0;
     }
 

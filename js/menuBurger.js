@@ -1,6 +1,6 @@
 // MENU BURGER
-const burger = document.querySelector(".burger");
-const navMenu = document.querySelector(".nav-main-ul");
+const burger = document.querySelector(".navbar__div--burger");
+const navMenu = document.querySelector(".navbar__ul");
 
 burger.addEventListener("click", mobileMenu);
 
@@ -10,7 +10,7 @@ function mobileMenu() {
 }
 
 // Ferme le menu quand clic sur lien
-const navLink = document.querySelectorAll(".nav-main-li");
+const navLink = document.querySelectorAll(".navbar__li");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 

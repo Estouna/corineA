@@ -2,24 +2,24 @@
     background-color: var(--white);
 }
 
-.main-content {
+.galery__div--main-content {
     width: 100%;
 }
 
-.slideshow-container {
+.galery__div--slideshow-container {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
     min-height: 100svh;
 }
 
-.slideshow {
+.galery__div--slideshow {
     position: absolute;
     height: 100%;
     display: flex;
 }
 
-/* ------------------------- BUTTONS SLIDER ------------------------- */
+/* ------------------------- BUTTONS PREV/NEXT SLIDER ------------------------- */
 .prev,
 .next {
     cursor: pointer;
@@ -38,34 +38,6 @@
 .prev:hover {padding-left: calc(15px + 0.5vw);}
 .next:hover {padding-right: calc(15px + 0.5vw);}
 
-
-/* ------------------------- MENU SLIDER -------------------------*/
-.box-home-slider {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 20%;
-}
-
-.home-slider {
-    font-family: var(--font-3);
-    font-size: calc(13px + 0.5vw);
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.6s;
-    color: white;
-}
-
-.home-slider:hover {color: rgba(255, 255, 255, 0.493);}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.5s;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
-
 /* ------------------------- SLIDES -------------------------*/
 .slide {
     position: relative;
@@ -74,6 +46,25 @@
     width: 100vw;
     color: var(--text-white);
 }
+
+/* btn retour Galerie */
+.slide__div--btnGalerie {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+}
+
+.slide__a--btnGalerie {
+    font-family: var(--font-3);
+    font-size: calc(13px + 0.5vw);
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.6s;
+    color: white;
+}
+
+.slide__a--btnGalerie:hover {color: rgba(255, 255, 255, 0.493);}
 
 .window-gal {
     max-width: 85%;
@@ -319,6 +310,14 @@
 }
 
 /* END MODAL */
+
+/* FADING ANIMATION */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
 
 @-webkit-keyframes fade {
     from {

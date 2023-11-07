@@ -25,22 +25,22 @@
 <body>
 
 	<header class="header-nav flex f-just-between">
-		<a href="/c-corine"><img src="images/Logo.png" alt="Logo Egaïa" class="logo"></a>
-		<nav class="nav-main">
-			<ul class="nav-main-ul flex f-center">
-				<li class="nav-main-li"><a href="#home" class="active">Accueil</a></li>
-				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
-				<li class="nav-main-li"><a href="#a-propos">A propos</a></li>
-				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
-				<li class="nav-main-li"><a href="#galery">Galerie</a></li>
-				<li class="nav-main-li nav-main-li-span"><span>&#47;</span></li>
-				<li class="nav-main-li"><a href="#contact">Contact</a></li>
+		<a href="/c-corine"><img src="images/Logo.png" alt="Logo Egaïa" class="navbar__logo"></a>
+		<nav class="navbar">
+			<ul class="navbar__ul flex f-center">
+				<li class="navbar__li"><a class="navbar__link" href="#home" class="active">Accueil</a></li>
+				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
+				<li class="navbar__li"><a class="navbar__link" href="#a-propos">A propos</a></li>
+				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
+				<li class="navbar__li"><a class="navbar__link" href="#galery">Galerie</a></li>
+				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
+				<li class="navbar__li"><a class="navbar__link" href="#contact">Contact</a></li>
 			</ul>
 
-			<div class="burger">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+			<div class="navbar__div--burger">
+				<span class="navbar__span--burgerBar"></span>
+				<span class="navbar__span--burgerBar"></span>
+				<span class="navbar__span--burgerBar"></span>
 			</div>
 		</nav>
 	</header>
@@ -49,13 +49,13 @@
 		<!-- 
 			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ACCUEIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
 		-->
-		<section id="home" class="flex f-just-center f-alig-end">
-			<div class="parallaxe pos-fixed"></div>
-			<div class="container-section column">
-                <div class="item flex"></div>
-                <div class="item flex"></div>
-                <div class="item flex f-center">
-					<p class="p-home">Peindre et dépeindre le présent</p>
+		<section id="home" class="section flex f-just-center f-alig-end">
+			<div class="section__div--parallaxe pos-fixed"></div>
+			<div class="section__div--container column">
+                <div class="section__div--item flex"></div>
+                <div class="section__div--item flex"></div>
+                <div class="section__div--item flex f-center">
+					<p class="section__p">Peindre et dépeindre le présent</p>
 				</div>
             </div>
 		</section>
@@ -64,24 +64,22 @@
 		<!-- 
 			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX A PROPOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
 		-->
-		<section id="a-propos" class="container-a-propos flex">
-			<div class="container-section column">
-				<div class="item flex"></div>
-				<div class="item pos-relative">
+		<section id="a-propos" class="section flex">
+			<div class="section__div--container column">
+				<div class="section__div--item flex"></div>
+				<div class="section__div--item pos-relative">
 		
-					<div class="block-corine pos-absolute">
-						<div class="block-titre">
-							<div class="column f-center">
-								<h1 class="h1-a-propos">Corine Avanzini</h1>
-								<h2 class="h2-a-propos">PEINTURE VIBRATOIRE & POESIE MACHINALE</h2>
-							</div>
+					<div class="card pos-absolute">
+						<div class="card__div--titre column f-center">
+								<h1 class="card__h1">Corine Avanzini</h1>
+								<h2 class="card__h2">PEINTURE VIBRATOIRE & POESIE MACHINALE</h2>
 						</div>
 		
-						<div class="block-photo-text">
-							<div class="photo">
-								<img class="img-corine" src="images/Corine portrait nb width 300px.jpg" alt="Corine Avanzini-Forneron">
+						<div class="card__div--photo-text">
+							<div class="card__div--photo">
+								<img class="card__img" src="images/Corine portrait nb width 300px.jpg" alt="Corine Avanzini-Forneron">
 							</div>
-							<p class="p-presentation">
+							<p class="card__p">
 								J’ai toujours rêvé de faire des toiles magiques<br>
 								et des mots bizarres.<br>
 								Ecrire, décrire l’instant, peindre et dépeindre<br>
@@ -95,7 +93,7 @@
 					</div>
 
 				</div>
-				<div class="item flex f-center"></div>
+				<div class="section__div--item flex f-center"></div>
 			</div>
 		</section>
 
@@ -103,10 +101,10 @@
 		<!-- 
 			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GALERIE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
 		-->
-		<section id="galery">
-			<div class="main-content">
-				<div class="slideshow-container">
-					<div class="slideshow">
+		<section id="galery" class="section">
+			<div class="galery__div--main-content">
+				<div class="galery__div--slideshow-container">
+					<div class="galery__div--slideshow">
 		
 						<!-- SLIDE 1 -->
 						<div id="#slide1" class="slide s1 fade f-center">
@@ -164,8 +162,8 @@
 		
 						<!-- SLIDE 2 -->
 						<div class="slide s2 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -222,8 +220,8 @@
 		
 						<!-- SLIDE 3 -->
 						<div class="slide s3 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -281,8 +279,8 @@
 		
 						<!-- SLIDE 4 -->
 						<div class="slide s4 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -340,8 +338,8 @@
 		
 						<!-- SLIDE 5 -->
 						<div class="slide s5 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -399,8 +397,8 @@
 		
 						<!-- SLIDE 6 -->
 						<div class="slide s6 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -458,8 +456,8 @@
 		
 						<!-- SLIDE 7 -->
 						<div class="slide s7 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -517,8 +515,8 @@
 		
 						<!-- SLIDE 8 -->
 						<div class="slide s8 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -576,8 +574,8 @@
 		
 						<!-- SLIDE 9 -->
 						<div class="slide s9 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -635,8 +633,8 @@
 		
 						<!-- SLIDE 10 -->
 						<div class="slide s10 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -694,8 +692,8 @@
 		
 						<!-- SLIDE 11 -->
 						<div class="slide s11 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -753,8 +751,8 @@
 		
 						<!-- SLIDE 12 -->
 						<div class="slide s12 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -812,8 +810,8 @@
 		
 						<!-- SLIDE 13 -->
 						<div class="slide s13 fade f-center">
-							<div class="box-home-slider unselectable">
-								<a class="home-slider" onclick="currentSlide(1)">Galerie</a>
+							<div class="slide__div--btnGalerie  unselectable">
+								<a class="slide__a--btnGalerie" onclick="currentSlide(1)">Galerie</a>
 							</div>
 							<div class="window-1">
 								<div class="btn-img">
@@ -878,17 +876,16 @@
 		<!-- 
 			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CONTACT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
 		-->
-		<section id="contact" class="container-contact column f-center">
-			<div class="background-section pos-fixed"></div>
-			<div class="container-section column">
+		<section id="contact" class="section column f-center">
+			<div class="section__div--container column">
 		
-				<div class="item flex">
+				<div class="section__div--item flex">
 					<div class="block-avis flex f-just-end f-alig-end">
 						<p class="p-avis text-center">VOUS AVEZ UN AVIS, UNE QUESTION ?</p>
 					</div>
 				</div>
 		
-				<div class="item pos-relative">
+				<div class="section__div--item pos-relative">
 					<div class="block-form pos-absolute">
 						<form class="contactForm" action="#contact">
 							<div class="champ-wrap">
@@ -915,7 +912,7 @@
 					</div>
 				</div>
 		
-				<div class="item flex f-center pos-relative">
+				<div class="section__div--item flex f-center pos-relative">
 					<footer class="block-footer pos-absolute">
 						<ul>
 							<li><a href="#">Droits d'auteur</a></li>

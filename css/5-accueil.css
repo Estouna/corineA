@@ -1,4 +1,4 @@
-.p-home {
+.section__p {
     font-family: var(--font-3);
     font-size: calc(13px + 1.5vw);
     color: var(--text-darkGrey);
@@ -8,18 +8,18 @@
     /* margin-bottom: 13vh; */
 }
 
-.p-home span {
+.section__span--letter {
     position: relative;
     display: inline-block;
     cursor: pointer;
     overflow-wrap: normal;
 }
 
-.p-home span:nth-child(1) {
+.section__span--letter:nth-child(1) {
     letter-spacing: -5px;
 }
 
-.p-home span.active {
+.section__span--letter.active {
     animation: smoke 3s linear forwards;
     /*Par défaut l'origine de transform est center*/
     transform-origin: bottom;

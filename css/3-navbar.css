@@ -9,17 +9,17 @@
     align-items: end;
 }
 
-.logo {
-    width: calc(80px + 4.5vw);
-}
-
-.nav-main {
+.navbar {
     background-color: rgba(255, 255, 255, 0.522);
     padding: 10px;
     border-radius: 5px;
 }
 
-.nav-main a {
+.navbar__logo {
+    width: calc(80px + 4.5vw);
+}
+
+.navbar__link {
     font-size: calc(14px + 0.2vw);
     letter-spacing: 1px;
     display: block;
@@ -30,22 +30,22 @@
     transition: 0.2s;
 }
 
-.nav-main a:hover {
+.navbar__link:hover {
     color: rgba(0, 0, 0, 0.527)
 }
 
-.nav-main a.active {
+.navbar__link.active {
     box-shadow: 0 1px 0 0 var(--blue);
 }
 
-.burger {
+.navbar__div--burger {
     position: relative;
     cursor: pointer;
     top: 0;
     display: none;
 }
 
-.bar {
+.navbar__span--burgerBar {
     display: block;
     width: 25px;
     height: 3px;
