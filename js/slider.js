@@ -28,24 +28,24 @@ function showSlides(n) {
 }
 
 // Clic pour ouvrir la fenêtre du slider
-const btn = document.querySelectorAll(".btn-voir, .btn-img");
-const content = document.querySelectorAll(".content");
+const btn = document.querySelectorAll(".slide__div--btn-img");
+const modal = document.querySelectorAll(".slide__div--modal");
 
 btn.forEach(function (element) {
   element.addEventListener('click', function () {
-    for (let b = 0; b < content.length; b++) {
-      content[b].classList.toggle("active")
+    for (let b = 0; b < modal.length; b++) {
+      modal[b].classList.toggle("active")
     }
   })
 })
 
 // Ferme la fenêtre
-const btnClose = document.querySelectorAll(".btn-close");
+const btnClose = document.querySelectorAll(".slide__button--close");
 
 btnClose.forEach(function (element) {
   element.addEventListener('click', function () {
-    for (let b = 0; b < content.length; b++) {
-      content[b].classList.remove("active")
+    for (let b = 0; b < modal.length; b++) {
+      modal[b].classList.remove("active")
     }
   })
 })

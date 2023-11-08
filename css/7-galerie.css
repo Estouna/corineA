@@ -20,8 +20,8 @@
 }
 
 /* ------------------------- BUTTONS PREV/NEXT SLIDER ------------------------- */
-.prev,
-.next {
+.slide__a--prev,
+.slide__a--next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -32,11 +32,11 @@
     padding: calc(10px + 0.5vw);
 }
 
-.prev {left: 0;}
-.next {right: 0;}
-.prev:hover, .next:hover {color: var(--white);}
-.prev:hover {padding-left: calc(15px + 0.5vw);}
-.next:hover {padding-right: calc(15px + 0.5vw);}
+.slide__a--prev {left: 0;}
+.slide__a--next {right: 0;}
+.slide__a--prev:hover, .slide__a--next:hover {color: var(--white);}
+.slide__a--prev:hover {padding-left: calc(15px + 0.5vw);}
+.slide__a--next:hover {padding-right: calc(15px + 0.5vw);}
 
 /* ------------------------- SLIDES -------------------------*/
 .slide {
@@ -66,41 +66,41 @@
 
 .slide__a--btnGalerie:hover {color: rgba(255, 255, 255, 0.493);}
 
-.window-gal {
+.slide__div--window-gal {
     max-width: 85%;
     gap: calc(6px + 0.8vw);
 }
 
-.window-gal, .window-1 {
+.slide__div--window-gal, .slide__div--window-1 {
     margin-top: 6%;
 }
 
-.container-square {
+.slide__div--container-square {
     width: calc(180px + 30vw);
     gap: calc(6px + 0.8vw);
 }
 
-.square, .square-gal {
+.slide__div--square, .slide__div--square-gal {
     position: relative;
     transition: 2s;
 }
 
-.square-gal {
+.slide__div--square-gal {
     color: var(--text-black);
     width: calc(80px + 5vw);
     height: calc(80px + 5vw);
 }
 
-.square {
+.slide__div--square {
     width: calc(35px + 6vw);
     height: calc(35px + 6vw);
 }
 
-.square-gap {gap: calc(6px + 0.8vw);}
+.slide__div--square-gap {gap: calc(6px + 0.8vw);}
 
 /* Slide Galerie (sommaire)*/
-.square-txt-galerie,
-.opac {
+.slide__span--square-txt-gal,
+.slide__div--opac {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,12 +112,17 @@
     z-index: 2;
 }
 
-.square-txt-galerie {
+.slide__span--square-txt-gal {
     font-size: calc(19px + 0.35vw);
     transition: 1s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.square-txt-galerie:hover {opacity: 1;}
-.square-gal:hover:before {opacity: 0.3;}
+
+.slide__div--square-gal:hover:before {opacity: 0.3;}
+.slide__span--square-txt-gal:hover {opacity: 1;}
 
 /* Animation deuxième ligne slides (sauf slide Galerie)*/
 /* Mouvement des 4 carrés */
@@ -129,30 +134,34 @@
 
 .gap-effect:hover {gap: 0;}
 
-/* Texte qui apparaît*/
-.opac {transition: 1.5s;}
+/* Texte qui apparaît avec background-color du slide */
+.slide__div--opac {transition: 1.5s;}
 
-.opac:hover {opacity: 1;}
-.opac-2:hover {background-color: var(--slide-2);}
-.opac-3:hover {background-color: var(--slide-3);}
-.opac-4:hover {background-color: var(--slide-4);}
-.opac-5:hover {background-color: var(--slide-5);}
-.opac-6:hover {background-color: var(--slide-6);}
-.opac-7:hover {background-color: var(--slide-7);}
-.opac-8:hover {background-color: var(--slide-8);}
-.opac-9:hover {background-color: var(--slide-9);}
-.opac-10:hover {background-color: var(--slide-10);}
-.opac-11:hover {background-color: var(--slide-11);}
-.opac-12:hover {background-color: var(--slide-12);}
-.opac-13:hover {background-color: var(--slide-13);}
+.slide__div--opac:hover {opacity: 1;}
+.slide__div--bg-2:hover {background-color: var(--slide-2);}
+.slide__div--bg-3:hover {background-color: var(--slide-3);}
+.slide__div--bg-4:hover {background-color: var(--slide-4);}
+.slide__div--bg-5:hover {background-color: var(--slide-5);}
+.slide__div--bg-6:hover {background-color: var(--slide-6);}
+.slide__div--bg-7:hover {background-color: var(--slide-7);}
+.slide__div--bg-8:hover {background-color: var(--slide-8);}
+.slide__div--bg-9:hover {background-color: var(--slide-9);}
+.slide__div--bg-10:hover {background-color: var(--slide-10);}
+.slide__div--bg-11:hover {background-color: var(--slide-11);}
+.slide__div--bg-12:hover {background-color: var(--slide-12);}
+.slide__div--bg-13:hover {background-color: var(--slide-13);}
 
-.square-txt {
+.slide__p--square-txt {
     font-size: calc(8px + 0.35vw);
     text-align: center;
     width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.square:before, .square-gal:before {
+.slide__div--square:before, .slide__div--square-gal:before {
     content: '';
     position: relative;
     width: 100%;
@@ -163,33 +172,33 @@
 }
 
 /* Slide Galerie*/
-.square-gal-1:before {background-image: url('../images/CarreLes3.jpg');}
-.square-gal-2:before {background-image: url('../images/CarreVolition.jpg');}
-.square-gal-3:before {background-image: url('../images/CarreMorphose.jpg');}
-.square-gal-4:before {background-image: url('../images/CarreNephelee.jpg');}
-.square-gal-5:before {background-image: url('../images/CarrePassage.jpg');}
-.square-gal-6:before {background-image: url('../images/CarreGecko.jpg');}
-.square-gal-7:before {background-image: url('../images/CarreEvolution.jpg');}
-.square-gal-8:before {background-image: url('../images/CarrePeriode.jpg');}
-.square-gal-9:before {background-image: url('../images/CarreReunion.jpg');}
-.square-gal-10:before {background-image: url('../images/CarreEnsemble.jpg');}
-.square-gal-11:before {background-image: url('../images/CarreElfe.jpg');}
-.square-gal-12:before {background-image: url('../images/CarreDivision.jpg');}
+.slide__div--s-gal-1:before {background-image: url('../images/CarreLes3.jpg');}
+.slide__div--s-gal-2:before {background-image: url('../images/CarreVolition.jpg');}
+.slide__div--s-gal-3:before {background-image: url('../images/CarreMorphose.jpg');}
+.slide__div--s-gal-4:before {background-image: url('../images/CarreNephelee.jpg');}
+.slide__div--s-gal-5:before {background-image: url('../images/CarrePassage.jpg');}
+.slide__div--s-gal-6:before {background-image: url('../images/CarreGecko.jpg');}
+.slide__div--s-gal-7:before {background-image: url('../images/CarreEvolution.jpg');}
+.slide__div--s-gal-8:before {background-image: url('../images/CarrePeriode.jpg');}
+.slide__div--s-gal-9:before {background-image: url('../images/CarreReunion.jpg');}
+.slide__div--s-gal-10:before {background-image: url('../images/CarreEnsemble.jpg');}
+.slide__div--s-gal-11:before {background-image: url('../images/CarreElfe.jpg');}
+.slide__div--s-gal-12:before {background-image: url('../images/CarreDivision.jpg');}
 
-.square-lesTrois:before {background-image: url('../images/CarreLes3.jpg');}
-.square-volition:before {background-image: url('../images/CarreVolition.jpg');}
-.square-morphose:before {background-image: url('../images/CarreMorphose.jpg');}
-.square-nephelee:before {background-image: url('../images/CarreNephelee.jpg');}
-.square-passage:before {background-image: url('../images/CarrePassage.jpg');}
-.square-gecko:before {background-image: url('../images/CarreGecko.jpg');}
-.square-evolution:before {background-image: url('../images/CarreEvolution.jpg');}
-.square-periode:before {background-image: url('../images/CarrePeriode.jpg');}
-.square-reunion:before {background-image: url('../images/CarreReunion.jpg');}
-.square-ensemble:before {background-image: url('../images/CarreEnsemble.jpg');}
-.square-elfe:before {background-image: url('../images/CarreElfe.jpg');}
-.square-division:before {background-image: url('../images/CarreDivision.jpg');}
+.slide__div--s-lesTrois:before {background-image: url('../images/CarreLes3.jpg');}
+.slide__div--s-volition:before {background-image: url('../images/CarreVolition.jpg');}
+.slide__div--s-morphose:before {background-image: url('../images/CarreMorphose.jpg');}
+.slide__div--s-nephelee:before {background-image: url('../images/CarreNephelee.jpg');}
+.slide__div--s-passage:before {background-image: url('../images/CarrePassage.jpg');}
+.slide__div--s-gecko:before {background-image: url('../images/CarreGecko.jpg');}
+.slide__div--s-evolution:before {background-image: url('../images/CarreEvolution.jpg');}
+.slide__div--s-periode:before {background-image: url('../images/CarrePeriode.jpg');}
+.slide__div--s-reunion:before {background-image: url('../images/CarreReunion.jpg');}
+.slide__div--s-ensemble:before {background-image: url('../images/CarreEnsemble.jpg');}
+.slide__div--s-elfe:before {background-image: url('../images/CarreElfe.jpg');}
+.slide__div--s-division:before {background-image: url('../images/CarreDivision.jpg');}
 
-.btn-img {
+.slide__div--btn-img {
     cursor: pointer;
     background-color: transparent;
     border: transparent;
@@ -197,7 +206,7 @@
     padding: 0;
 }
 
-.window-1 {
+.slide__div--window-1 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -223,7 +232,7 @@
 /* END SLIDES */
 
 /* MODAL */
-.content {
+.slide__div--modal {
     position: absolute;
     top: 0;
     background-color: var(--white);
@@ -243,12 +252,12 @@
     box-shadow: inset 0 0 20px 1px var(--black);
 }
 
-.content.active {
+.slide__div--modal.active {
     visibility: visible;
     opacity: 1;
 }
 
-.window-2 {
+.slide__div--window-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -257,38 +266,38 @@
     align-items: flex-start;
 }
 
-.span-text-modal {
+.slide__span--text-modal {
     font-family: var(--font-2);
     font-size: calc(16px + 0.4vw);
 }
 
-.window-2 p {
+.slide__div--window-2 p {
     font-size: calc(11px + 0.4vw);
     margin-top: 10px;
 }
 
-.img-modal-slide-verti {
+.slide__img--modal-verti {
     width: calc(230px + 20vw);
     height: auto;
 }
 
-.img-modal-slide-hori {
+.slide__img--modal-hori {
     width: calc(130px + 50vw);
     height: auto;
 }
 
-.img-modal-slide-spec {
+.slide__img--modal-spec {
     width: calc(180px + 13vw);
     height: auto;
 }
 
-.text-modal {
+.slide__p--text-modal {
     padding: 5px;
     margin-top: 10px;
 }
 
 /*Button close modal*/
-.btn-close {
+.slide__button--close {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -305,7 +314,7 @@
     transition: 0.5s;
 }
 
-.btn-close:hover {
+.slide__button--close:hover {
     background-color: #d2d2d2;
 }
 
