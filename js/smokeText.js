@@ -7,17 +7,17 @@ texts.forEach(function (p) {
 // Sélectionne tous les span
 const spans = document.querySelectorAll('.section__span--letter');
 
-// Ajoute la classe active et la retire après 10 secondes
-function addRemoveTimeout(span) {
-  span.classList.add('active');
-  setTimeout(function () {
-    span.classList.remove('active');
-  }, 4000);
-}
-
 // Evénements "mouseenter" pour chaque élément span
 spans.forEach(function (span) {
   span.addEventListener('mouseenter', function () {
     addRemoveTimeout(span);
   });
 });
+
+// Ajoute la classe active et la retire après X secondes
+function addRemoveTimeout(span) {
+  span.classList.add('active');
+  setTimeout(function () {
+    span.classList.remove('active');
+  }, 4000);
+}

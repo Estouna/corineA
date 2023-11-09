@@ -34,6 +34,10 @@
         padding: calc(102px + 1vw) calc(2px + 0.6vw) calc(190px + 1vw);
     }
 
+    .card__div--titre {
+        top: -125px;
+    }
+
     .card__h1 {
         font-size: 55px;
         letter-spacing: 2px;
@@ -164,6 +168,10 @@
         padding: calc(2px + 1vw) calc(2px + 0.6vw) calc(60px + 1vw);
     }
 
+    .card__div--titre {
+        top: -105px;
+    }
+
     .card__h1 {
         font-size: 45px;
     }
@@ -232,8 +240,12 @@
     .section__div--parallaxe {
         background-size: 150%;
     }
-
+    
     /*SECTION A PROPOS*/
+    .card__div--titre {
+        top: -48px;
+    }
+
     .card__h1 {
         font-size: 22px;
     }
@@ -309,7 +321,7 @@
     }
 
     .navbar__li {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .navbar__li--span {
@@ -431,6 +443,10 @@
     }
 
     /*SECTION A PROPOS*/
+    .container-card {
+        justify-content: center;
+    }
+
     .card {
         margin: 0;
     }
@@ -446,6 +462,10 @@
     .card__p {
         font-size: 11px;
         line-height: 21px;
+    }
+
+    .card__div--photo-text {
+        padding: calc(50px + 2vw) 2px 0 2px;
     }
 
     .card__div--photo {
@@ -500,7 +520,20 @@
 
     /*SECTION A PROPOS*/
     .card {
-        padding: calc(6px + 0.6vw) 0 calc(30px + 0.7vw) 0;
+        padding: calc(6px + 0.6vw) 2px calc(2px + 0.7vw);
+    }
+
+    .card__div--titre {
+        top: -43px;
+    }
+
+    .card__div--photo-text {
+        padding: calc(50px + 2vw) 2px 0 2px;
+    }
+
+    .card__p {
+        line-height: 19px;
+        letter-spacing: 0;
     }
 
     /* SECTION GALERIE */
@@ -592,6 +625,10 @@
     /*SECTION A PROPOS*/
     .card {
         padding-bottom: 50px;
+    }
+
+    .card__div--titre {
+        top: -34px;
     }
 
     .card__h1 {
@@ -708,19 +745,25 @@
         padding-bottom: 0;
     }
 
-    /*SECTION CONTACT*/
-    .avis__p {
-        padding: 2px 4px;
-        background-color: rgba(255, 255, 255, 0.85);
-        border-radius: 2px;
-    }
+}
 
+/* END MAX-HEIGHT 500px______________________________*/
+
+
+
+/* 
+    ______________________________ MAX-HEIGHT 410px ______________________________
+*/
+
+@media only screen and (max-height: 410px) {
+
+    /*SECTION CONTACT*/
     .form {
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
         padding: 20px 5px;
-        gap: 5px;
+        gap: 10px;
     }
 
     .form__div--champ-wrap {
@@ -739,25 +782,32 @@
     .form__input--submit {
         padding: 4px 20px;
     }
+
 }
 
-/* END MAX-HEIGHT 500px______________________________*/
+/* END MAX-HEIGHT 410px______________________________*/
 
 
-/* Taille (à peu près) avec le menu navigateur firefox en mode landscape (320 - 55 = 265)*/
+
+
 /* 
     ______________________________ MAX-HEIGHT 360px ______________________________
 */
 
 @media only screen and (max-height: 360px) {
 
-    /*SECTION A GALERIE*/
+    /*SECTION A PROPOS*/
+    .card__div--photo-text {
+        padding: 25px 5px 5px;
+    }
+
+    /*SECTION GALERIE*/
     .slide__div--square {
         width: calc(15px + 5vw);
         height: calc(15px + 5vw);
     }
 
-    /*SECTION A GALERIE*/
+    /*SECTION CONTACT*/
     .avis {
         padding: 0 calc(1px + 7vw) 2px 0;
     }

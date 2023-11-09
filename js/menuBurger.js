@@ -1,4 +1,3 @@
-// MENU BURGER
 const burger = document.querySelector(".navbar__div--burger");
 const navMenu = document.querySelector(".navbar__ul");
 
