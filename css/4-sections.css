@@ -1,7 +1,7 @@
 section {
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .section__div--parallaxe {
@@ -19,7 +19,6 @@ section {
 .section__div--container {
     width: 100%;
     height: 100vh;
-    height: 100svh;
 }
 
 .section__div--item:nth-child(1),
