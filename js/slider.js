@@ -33,14 +33,17 @@ const modal = document.querySelectorAll(".slide__div--modal");
 let scrollPosition = 0;
 btn.forEach(function (element) {
   element.addEventListener('click', function () {
+
     scrollPosition = window.scrollY;
     for (let b = 0; b < modal.length; b++) {
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollPosition}px`;
       modal[b].classList.toggle("active")
+      
       document.documentElement.classList.add('no-smooth-scroll');
       document.querySelector('main').style.overflow = 'hidden';
     }
+
   })
 })
 
@@ -49,13 +52,16 @@ const btnClose = document.querySelectorAll(".slide__button--close");
 
 btnClose.forEach(function (element) {
   element.addEventListener('click', function () {
+
     for (let b = 0; b < modal.length; b++) {
       document.body.style.position = '';
       document.body.style.top = '';
       modal[b].classList.remove("active")
+
       window.scrollTo({ top: scrollPosition, behavior: 'auto' });
       document.documentElement.classList.remove('no-smooth-scroll');
       document.querySelector('main').style.overflow = 'auto';
     }
+
   })
 })

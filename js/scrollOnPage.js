@@ -2,9 +2,19 @@ const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll(".navbar__link");
 const mediaQueryScrollOnPage = window.matchMedia('(min-width: 800px)');
 
+ // ********* Scroll smooth barre de navigation
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    // link.hash retourne le '#' suivi par l'identificateur de fragment de URL (ici #accueil, #a-propos, etc).
+    const section = document.querySelector(link.hash);
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 if (mediaQueryScrollOnPage.matches) {
 
-  // ********* Scroll barre de navigation
+  // ********* Scroll classe active barre de navigation
   window.addEventListener("scroll", () => {
     // Trouve la section active (reverse() plus performant)
     const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - 100) - 1;
@@ -12,14 +22,6 @@ if (mediaQueryScrollOnPage.matches) {
     navLinks[current].classList.add("active");
   });
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      // link.hash retourne le '#' suivi par l'identificateur de fragment de URL (ici #accueil, #a-propos, etc).
-      const section = document.querySelector(link.hash);
-      section.scrollIntoView({ behavior: "smooth" });
-    });
-  });
 
   // ********* Scroll molette souris
   let isScrolling;

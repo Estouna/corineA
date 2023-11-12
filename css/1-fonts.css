@@ -1,14 +1,17 @@
 @font-face {
     font-family: "Roboto-Light";
     src: url("../fonts/Roboto-Light.ttf") format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Roboto-LightItalic";
     src: url("../fonts/Roboto-LightItalic.ttf") format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Photoshoot";
     src: url("../fonts/Photoshoot.ttf") format('truetype');
+    font-display: swap;
 }
