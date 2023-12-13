@@ -35,7 +35,7 @@
     }
 
     .card__div--titre {
-        top: -125px;
+        top: -117px;
     }
 
     .card__h1 {
@@ -169,7 +169,7 @@
     }
 
     .card__div--titre {
-        top: -105px;
+        top: -95px;
     }
 
     .card__h1 {
@@ -243,7 +243,7 @@
     
     /*SECTION A PROPOS*/
     .card__div--titre {
-        top: -48px;
+        top: -42px;
     }
 
     .card__h1 {
@@ -524,7 +524,7 @@
     }
 
     .card__div--titre {
-        top: -43px;
+        top: -38px;
     }
 
     .card__div--photo-text {
@@ -609,17 +609,17 @@
     }
 
     .slide__img--modal-hori {
-        width: calc(380px + 3vw);
+        width: calc(350px + 3vw);
         height: auto;
     }
 
     .slide__img--modal-verti {
-        width: calc(200px + 3vw);
+        width: calc(180px + 3vw);
         height: auto;
     }
 
     .slide__img--modal-spec {
-        width: calc(130px + 3vw);
+        width: calc(120px + 3vw);
         height: auto;
     }
 
@@ -633,7 +633,7 @@
     }
 
     .card__div--titre {
-        top: -34px;
+        top: -30px;
     }
 
     .card__h1 {

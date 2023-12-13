@@ -1,3 +1,8 @@
+/*Quand modal ouverte pour empêcher le scroll*/
+html.no-smooth-scroll {
+    scroll-behavior: auto;
+}
+
 #galery {
     background-color: var(--white);
 }
@@ -40,7 +45,7 @@
 /* ------------------------- SLIDES -------------------------*/
 .slide {
     position: relative;
-    /*empêche qu'ils rétrécisent*/
+    /*empêche qu'ils rétrécissent*/
     flex-shrink: 0;
     width: 100vw;
     height: 100%;

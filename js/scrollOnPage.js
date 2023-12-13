@@ -29,7 +29,7 @@ if (mediaQueryScrollOnPage.matches) {
     // Arrête le scroll s'il est en cours
     window.clearTimeout(isScrolling);
     e.preventDefault();
-    // Récupére la direction du scroll (deltaY = nombre positif (scroll vers le bas) ou négatif (scroll vers le haut)). 
+    // Récupérer la direction du scroll (deltaY = nombre positif (scroll vers le bas) ou négatif (scroll vers le haut)). 
     const direction = e.deltaY < 0 ? -1 : 1;
     const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - 100) - 1;
     // Détermine la section suivante ou précédente
@@ -40,13 +40,65 @@ if (mediaQueryScrollOnPage.matches) {
       next = sections.length - 1;
     }
     // Défiler vers la section suivante ou précédente
-    const section = sections[next];
-    section.scrollIntoView({ behavior: "smooth" });
+    // const section = sections[next];
+    // section.scrollIntoView({ behavior: "smooth" });
 
     // Mise à jour de la section active après le scroll
     isScrolling = setTimeout(() => {
-      navLinks.forEach((link) => link.classList.remove("active"));
-      navLinks[next].classList.add("active");
-    }, 1000);
+      const section = sections[next];
+    section.scrollIntoView({ behavior: "smooth" });
+    }, 300);
   }, { passive: false });
+
+    // // ********* Scroll molette souris
+    // let isScrolling;
+    // // Compteur de scroll molette souris
+    // let nbScrollMouseWheel = 0;
+    // window.addEventListener("wheel", (e) => {
+  
+    //   e.preventDefault();
+  
+    //   // Arrête le scroll s'il est en cours
+    //   window.clearTimeout(isScrolling);
+      
+    //   // Compte les scrolls
+    //   (e.deltaY) ? nbScrollMouseWheel++ : '';
+  
+      
+    //   // Récupéré la direction du scroll (-1 vers le haut, 1 vers le bas). 
+    //   const direction = e.deltaY < 0 ? -1 : 1;
+      
+    //   current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - 100) -1;
+      
+    //   // Détermine la section suivante ou précédente
+    //   let next = current + direction;
+      
+      
+    //   if (next < 0) {
+    //     next = 0;
+    //   } else if (next >= sections.length) {
+    //     next = sections.length - 1;
+    //   }
+    //   // Mise à jour de la section active après le scroll
+    //   isScrolling = setTimeout(() => {
+    //     // Défiler vers la section suivante ou précédente
+    //     const section = sections[next];
+    //     const secCurrent = sections[current]
+    //     // console.log('next =')
+    //     // console.log(section)
+    //     // console.log('current =')
+    //     // console.log(secCurrent)
+    //     if (nbScrollMouseWheel < 10) {
+    //       section.scrollIntoView({ behavior: "smooth" });
+    //       nbScrollMouseWheel = 0;
+    //     } else {
+    //       sections[current].scrollIntoView({ behavior: "smooth" });
+    //       nbScrollMouseWheel = 0;
+    //     }
+    //     console.log(nbScrollMouseWheel)
+  
+    //   },300);
+  
+    // }, { passive: false });
+  
 }

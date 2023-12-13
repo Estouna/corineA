@@ -15,11 +15,14 @@
 	<link rel="stylesheet" href="css/8-contact.css" type="text/css">
 	<link rel="stylesheet" href="css/100-mediaqueries.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="menu-settings/css/styleSettings.css">
+
 	<script src="js/scrollOnPage.js" defer></script>
 	<script src="js/smokeText.js" defer></script>
 	<script src="js/menuBurger.js" defer></script>
 	<script src="js/slider.js" defer></script>
 	<script src="js/script.js" defer></script>
+	<script src="menu-settings/js/scriptSettings.js" defer></script>
 	<title>Corine-Avanzini</title>
 </head>
 <body>
@@ -28,13 +31,13 @@
 		<a href="/c-corine"><img src="images/Logo.png" alt="Logo Egaïa" class="navbar__logo"></a>
 		<nav class="navbar">
 			<ul class="navbar__ul flex f-center">
-				<li class="navbar__li"><a class="navbar__link" href="#home" class="active">Accueil</a></li>
+				<li class="navbar__li"><a class="navbar__link a-settings active" href="#home" class="active">Accueil</a></li>
 				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
-				<li class="navbar__li"><a class="navbar__link" href="#a-propos">A propos</a></li>
+				<li class="navbar__li"><a class="navbar__link a-settings" href="#a-propos">A propos</a></li>
 				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
-				<li class="navbar__li"><a class="navbar__link" href="#galery">Galerie</a></li>
+				<li class="navbar__li"><a class="navbar__link a-settings" href="#galery">Galerie</a></li>
 				<li class="navbar__li navbar__li--span"><span>&#47;</span></li>
-				<li class="navbar__li"><a class="navbar__link" href="#contact">Contact</a></li>
+				<li class="navbar__li"><a class="navbar__link a-settings" href="#contact">Contact</a></li>
 			</ul>
 
 			<div class="navbar__div--burger">
@@ -52,10 +55,10 @@
 		<section id="home" class="section flex f-just-center f-alig-end">
 			<div class="section__div--parallaxe pos-fixed"></div>
 			<div class="section__div--container column">
+                <div class="section__div--item flex background-settings"></div>
                 <div class="section__div--item flex"></div>
-                <div class="section__div--item flex"></div>
-                <div class="section__div--item flex f-center">
-					<p class="section__p">Peindre et dépeindre le présent</p>
+                <div class="section__div--item flex f-center background-settings">
+					<p class="section__p texts-settings">Peindre et dépeindre le présent</p>
 				</div>
             </div>
 		</section>
@@ -66,21 +69,21 @@
 		-->
 		<section id="a-propos" class="section flex">
 			<div class="section__div--container column">
-				<div class="section__div--item flex"></div>
+				<div class="section__div--item flex background-settings"></div>
 				<div class="section__div--item pos-relative">
 		
 					<div class="container-card flex">
 						<div class="card pos-relative">
 							<div class="card__div--titre column f-center pos-absolute">
-								<h1 class="card__h1">Corine Avanzini</h1>
-								<h2 class="card__h2">PEINTURE VIBRATOIRE & POESIE MACHINALE</h2>
+								<h1 class="card__h1 heading-settings">Corine Avanzini</h1>
+								<h2 class="card__h2 heading-settings">PEINTURE VIBRATOIRE & POESIE MACHINALE</h2>
 							</div>
 					
 							<div class="card__div--photo-text">
 								<div class="card__div--photo">
 									<img class="card__img" src="images/Corine portrait nb width 300px.jpg" alt="Corine Avanzini-Forneron">
 								</div>
-								<p class="card__p">
+								<p class="card__p texts-settings">
 									J’ai toujours rêvé de faire des toiles magiques<br>
 									et des mots bizarres.<br>
 									Ecrire, décrire l’instant, peindre et dépeindre<br>
@@ -95,7 +98,7 @@
 					</div>
 		
 				</div>
-				<div class="section__div--item flex f-center"></div>
+				<div class="section__div--item flex f-center background-settings"></div>
 			</div>
 		</section>
 
@@ -109,7 +112,7 @@
 					<div class="galery__div--slideshow">
 		
 						<!-- SLIDE 1 -->
-						<div id="#slide1" class="slide s1 fade f-center">
+						<div id="#slide1" class="slide s1 fade f-center background-settings">
 							<div class="slide__div--window-gal flex f-center f-wrap">
 								<div class="slide__div--square-gap flex f-center f-wrap">
 									<div class="flex slide__div--square-gap">
@@ -219,8 +222,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
-							</div>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
+						</div>
 		
 						<!-- SLIDE 3 -->
 						<div class="slide s3 fade f-center">
@@ -279,8 +282,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 4 -->
@@ -340,8 +343,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 5 -->
@@ -401,8 +404,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 6 -->
@@ -462,8 +465,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 7 -->
@@ -523,8 +526,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 8 -->
@@ -584,8 +587,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 9 -->
@@ -645,8 +648,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 10 -->
@@ -706,8 +709,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 11 -->
@@ -767,8 +770,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 12 -->
@@ -828,8 +831,8 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="slide__a--next" onclick="plusSlides(1)">&#10095;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--next a-settings" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 		
 						<!-- SLIDE 13 -->
@@ -889,7 +892,7 @@
 									<button class="slide__button--close">X</button>
 								</div>
 							</div>
-							<a class="slide__a--prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="slide__a--prev a-settings" onclick="plusSlides(-1)">&#10094;</a>
 						</div>
 		
 					</div>
@@ -905,9 +908,9 @@
 		<section id="contact" class="section column f-center">
 			<div class="section__div--container column">
 		
-				<div class="section__div--item flex">
+				<div class="section__div--item flex background-settings">
 					<div class="avis flex f-just-end f-alig-end">
-						<p class="avis__p text-center">VOUS AVEZ UN AVIS, UNE QUESTION ?</p>
+						<p class="avis__p text-center texts-settings">VOUS AVEZ UN AVIS, UNE QUESTION ?</p>
 					</div>
 				</div>
 		
@@ -937,19 +940,399 @@
 					</div>
 				</div>
 		
-				<div class="section__div--item flex f-center pos-relative">
+				<div class="section__div--item flex f-center pos-relative background-settings">
 					<footer class="footer pos-absolute">
 						<ul class="footer__ul">
-							<li><a class="footer__a" href="#">Droits d'auteur</a></li>
-							<li><a class="footer__a" href="#">Mentions légales</a></li>
-							<li><a class="footer__a" href="#">Politique de confidentialité</a></li>
-							<li><a class="footer__a" href="#">Politique de cookies</a></li>
+							<li><a class="footer__a a-settings" href="#">Droits d'auteur</a></li>
+							<li><a class="footer__a a-settings" href="#">Mentions légales</a></li>
+							<li><a class="footer__a a-settings" href="#">Politique de confidentialité</a></li>
+							<li><a class="footer__a a-settings" href="#">Politique de cookies</a></li>
 						</ul>
 					</footer>
 				</div>
 		
 			</div>
 		</section>
+
+		<!--
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX SETTINGS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+		-->
+
+		<div class="settings__container">
+            <div class="settings__container-inner">
+                <div class="settings__btn--bg flex f-center">
+                    <svg class="settings__btn--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <g fill="none" stroke-width="7.999" stroke-linecap="round">
+                            <path d="M 55,26.000284 L 24.056276,25.999716" />
+                            <path d="M 24.056276,49.999716 L 75.943724,50.000284" />
+                            <path d="M 45,73.999716 L 75.943724,74.000284" />
+                            <path d="M 75.943724,26.000284 L 45,25.999716" />
+                            <path d="M 24.056276,73.999716 L 55,74.000284" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="settings__panel">
+                    <div class="wrapper">
+                        <nav class="wrapper__nav">
+                            <button class="wrapper__btn active" data-id="color">Couleur</button>
+                            <button class="wrapper__btn" data-id="font_family">Police</button>
+                            <button class="wrapper__btn" data-id="font_size">Taille</button>
+                        </nav>
+                        <div class="wrapper-container column f-center">
+
+                            <div id="color" class="wrapper__content active f-center f-wrap">
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Fond</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="background_color">Couleur du fond</label>
+                                        <select id="background_color" class="settings__panel--select" onchange="backgroundColor(this)">
+                                            <option value="var(--white-settings)" selected>Blanc (par défaut)</option>
+                                            <option value="var(--black-settings)">Noir</option>
+                                            <option value="var(--grey-settings)">Gris</option>
+                                            <option value="var(--pink-settings)">Rose</option>
+                                            <option value="purple">Violet</option>
+                                            <option value="coral">Corail</option>
+                                            <option value="var(--blue-settings)">Bleu</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Titres</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h1_color">Couleur du titre h1</label>
+                                        <select id="h1_color" class="settings__panel--select" onchange="h1Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h2_color">Couleur du titre h2</label>
+                                        <select id="h2_color" class="settings__panel--select" onchange="h2Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="column f-center">
+                                        <label class="settings__panel--label" for="h3_color">Couleur du titre h3</label>
+                                        <select id="h3_color" class="settings__panel--select" onchange="h3Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h4_color">Couleur du titre h4</label>
+                                        <select id="h4_color" class="settings__panel--select" onchange="h4Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h5_color">Couleur du titre h5</label>
+                                        <select id="h5_color" class="settings__panel--select" onchange="h5Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h6_color">Couleur du titre h6</label>
+                                        <select id="h6_color" class="settings__panel--select" onchange="h6Color(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="titles_color">Couleur des titres</label>
+                                        <select id="titles_color" class="settings__panel--select" onchange="titlesColor(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+								<fieldset class="flex f-center f-wrap">
+                                    <legend>Texte et liens</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="text_color">Couleur du texte</label>
+                                        <select id="text_color" class="settings__panel--select" onchange="textColor(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="a_color">Couleur des liens</label>
+                                        <select id="a_color" class="settings__panel--select" onchange="linksColor(this)">
+                                            <option value="var(--text-black-settings)" selected>Noir (par défaut)</option>
+                                            <option value="var(--text-white-settings)">Blanc</option>
+                                            <option value="var(--text-grey-settings)">Gris</option>
+                                            <option value="var(--text-red-settings)">Rouge</option>
+                                            <option value="var(--text-pink-settings)">Rose</option>
+                                            <option value="var(--text-green-settings)">Vert</option>
+                                            <option value="var(--text-blue-settings)">Bleu</option>
+                                            <option value="coral">Corail</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div id="font_family" class="wrapper__content f-center f-wrap">
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Titres</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="title_font-family">Police des titres</label>
+                                        <select id="title_font-family" class="settings__panel--select" onchange="titleFontFamily(this)">
+                                            <optgroup label="Roboto">
+                                                <option value="var(--font-1-settings)" selected>Roboto Light</option>
+                                                <option value="var(--font-2-settings)">Roboto Light Italic</option>
+                                                <option value="var(--font-3-settings)">Roboto Regular</option>
+                                                <option value="var(--font-4-settings)">Roboto Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Poppins">
+                                                <option value="var(--font-5-settings)">Poppins Regular</option>
+                                                <option value="var(--font-6-settings)">Poppins Italic</option>
+                                                <option value="var(--font-7-settings)">Poppins Light</option>
+                                                <option value="var(--font-8-settings)">Poppins Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Raleway">
+                                                <option value="var(--font-9-settings)">Raleway Regular</option>
+                                                <option value="var(--font-10-settings)">Raleway Italic</option>
+                                                <option value="var(--font-11-settings)">Raleway Light</option>
+                                                <option value="var(--font-12-settings)">Raleway Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Photoshoot">
+                                                <option value="var(--font-13-settings)">Photoshoot</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Texte et liens</legend>    
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="text_font-family">Police du texte</label>
+                                        <select id="text_font-family" class="settings__panel--select" onchange="textFontFamily(this)">
+                                            <optgroup label="Roboto">
+                                                <option value="var(--font-1-settings)" selected>Roboto Light</option>
+                                                <option value="var(--font-2-settings)">Roboto Light Italic</option>
+                                                <option value="var(--font-3-settings)">Roboto Regular</option>
+                                                <option value="var(--font-4-settings)">Roboto Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Poppins">
+                                                <option value="var(--font-5-settings)">Poppins Regular</option>
+                                                <option value="var(--font-6-settings)">Poppins Italic</option>
+                                                <option value="var(--font-7-settings)">Poppins Light</option>
+                                                <option value="var(--font-8-settings)">Poppins Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Raleway">
+                                                <option value="var(--font-9-settings)">Raleway Regular</option>
+                                                <option value="var(--font-10-settings)">Raleway Italic</option>
+                                                <option value="var(--font-11-settings)">Raleway Light</option>
+                                                <option value="var(--font-12-settings)">Raleway Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Photoshoot">
+                                                <option value="var(--font-13-settings)">Photoshoot</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+									<div class="column f-center">
+                                        <label class="settings__panel--label" for="a_font-family">Police des liens</label>
+                                        <select id="a_font-family" class="settings__panel--select" onchange="linkFontFamily(this)">
+                                            <optgroup label="Roboto">
+                                                <option value="var(--font-1-settings)" selected>Roboto Regular</option>
+                                                <option value="var(--font-2-settings)">Roboto Italic</option>
+                                                <option value="var(--font-3-settings)">Roboto Light</option>
+                                                <option value="var(--font-4-settings)">Roboto Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Poppins">
+                                                <option value="var(--font-5-settings)">Poppins Regular</option>
+                                                <option value="var(--font-6-settings)">Poppins Italic</option>
+                                                <option value="var(--font-7-settings)">Poppins Light</option>
+                                                <option value="var(--font-8-settings)">Poppins Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Raleway">
+                                                <option value="var(--font-9-settings)">Raleway Regular</option>
+                                                <option value="var(--font-10-settings)">Raleway Italic</option>
+                                                <option value="var(--font-11-settings)">Raleway Light</option>
+                                                <option value="var(--font-12-settings)">Raleway Light Italic</option>
+                                            </optgroup>
+                                            <optgroup label="Photoshoot">
+                                                <option value="var(--font-13-settings)">Photoshoot</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            
+                            <div id="font_size" class="wrapper__content f-center f-wrap">
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Titres</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h1_font-size">Taille du titre h1</label>
+                                        <select id="h1_font-size" class="settings__panel--select" onchange="h1FontSize(this)">
+                                            <option value="var(--font-size-7)" selected>32px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-1)">16px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h2_font-size">Taille du titre h2</label>
+                                        <select id="h2_font-size" class="settings__panel--select" onchange="h2FontSize(this)">
+                                            <option value="var(--font-size-5)" selected>24px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-1)">16px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h3_font-size">Taille du titre h3</label>
+                                        <select id="h3_font-size" class="settings__panel--select" onchange="h3FontSize(this)">
+                                            <option value="var(--font-size-4)" selected>20px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-1)">16px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h4_font-size">Taille du titre h4</label>
+                                        <select id="h4_font-size" class="settings__panel--select" onchange="h4FontSize(this)">
+                                            <option value="var(--font-size-1)" selected>16px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h5_font-size">Taille du titre h5</label>
+                                        <select id="h5_font-size" class="settings__panel--select" onchange="h5FontSize(this)">
+                                            <option value="var(--font-size-3)" selected>14px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-1)">16px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="h6_font-size">Taille du titre h6</label>
+                                        <select id="h6_font-size" class="settings__panel--select" onchange="h6FontSize(this)">
+                                            <option value="var(--font-size-2)" selected>12px (par défaut)</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-1)">16px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="flex f-center f-wrap">
+                                    <legend>Texte</legend>
+                                    <div class="column f-center">
+                                        <label class="settings__panel--label" for="text_font-size">Taille du texte</label>
+                                        <select id="text_font-size" class="settings__panel--select" onchange="textFontSize(this)">
+                                            <option value="var(--font-size-1)" selected>16px (par défaut)</option>
+                                            <option value="var(--font-size-2)">12px</option>
+                                            <option value="var(--font-size-3)">14px</option>
+                                            <option value="var(--font-size-4)">20px</option>
+                                            <option value="var(--font-size-5)">24px</option>
+                                            <option value="var(--font-size-6)">28px</option>
+                                            <option value="var(--font-size-7)">32px</option>
+                                            <option value="var(--font-size-8)">36px</option>
+                                            <option value="var(--font-size-9)">40px</option>
+                                            <option value="var(--font-size-10)">44px</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <!-- Rediriger sur la page réinitialise tous. Solutions provisoire -_- -->
+                            <!-- <a class="reset" href="file:///C:/Users/cyril/Desktop/c-corine/index.html">Tout réinitialiser</a> -->
+                            <a class="reset" href="https://cyrilgab.alwaysdata.net/c-corine/">Tout réinitialiser</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 	</main>
 
