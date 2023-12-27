@@ -1,7 +1,7 @@
 .section__p {
     font-family: var(--font-3);
     font-size: calc(15px + 1.5vw);
-    color: var(--text-darkGrey);
+    color: var(--text-color-4);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;

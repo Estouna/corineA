@@ -24,7 +24,7 @@ section {
 .section__div--item:nth-child(1),
 .section__div--item:nth-child(3) {
     height: 23%;
-    background-color: var(--white);
+    background-color: var(--color-2);
 }
 
 .section__div--item:nth-child(2) {

@@ -32,7 +32,7 @@
 
 .form__label {
     font-size: calc(12px + 0.3vw);
-    color: var(--text-black);
+    color: var(--text-color-1);
     margin: calc(4px + 0.4vw) 0 calc(2px + 0.4vw);
 }
 
@@ -41,9 +41,9 @@
 }
 
 .form__input {
-    border: 3px double var(--white);
+    border: 3px double var(--color-2);
     border-radius: 10px;
-    color: var(--text-darkGrey);
+    color: var(--text-color-4);
     padding: 15px;
     box-shadow:
         -1px 1px 2px 1px #687ab3,
@@ -55,7 +55,7 @@
 
 .form__input:focus {
     background-color: #ffffff;
-    color: var(--text-black);
+    color: var(--text-color-1);
     outline: 1px solid #6382dd;
     box-shadow:
         0 0 0 0 #ffffff,
@@ -82,8 +82,8 @@
 
 .form__input--submit {
     font-size: calc(10px + 0.3vw);
-    background-color: var(--blue);
-    color: var(--text-white);
+    background-color: var(--color-5);
+    color: var(--text-color-2);
     transition: 0.5s;
     padding: 10px 30px;
     border: none;
@@ -100,7 +100,7 @@
     left: 0;
     width: 100%;
     padding: 5px;
-    background-color: var(--blue);
+    background-color: var(--color-5);
 }
 
 .footer__ul {
@@ -114,5 +114,5 @@
 }
 
 .footer__a {
-    color: var(--text-white);
+    color: var(--text-color-2);
 }

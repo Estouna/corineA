@@ -12,32 +12,28 @@
     --font-2: 'Roboto-LightItalic', arial, sans-serif;
     --font-3: 'Photoshoot', arial, sans-serif;
     /* --------------- TEXT COLOR ----------------- */
-    --text-black: #000000;
-    --text-white: #ffffff;
-    --text-grey: #adadad;
-    --text-darkGrey: #706f6f;
-    --text-blue: #142f7d;
+    --text-color-1: #000000;
+    --text-color-2: #ffffff;
+    --text-color-3: #adadad;
+    --text-color-4: #706f6f;
+    --text-color-5: #041a70;
     /* --------------- COLORS ----------------- */
-    --black: #111111;
-    --white: #ffffff;
-    --grey: #adadad;
-    --darkGrey: #706f6f;
-    --blue: #142f7d;
-    /* --------------- SLIDER BACKGROUND ----------------- */
-    /* --slide-1: #0f0f0f; */
-    --slide-1: #ffffff;
-    --slide-2: #964d18;
-    --slide-3: #041a70;
-    --slide-4: #7d7939;
-    --slide-5: #2441b9;
-    --slide-6: #0c614c;
-    --slide-7: #a41c2a;
-    --slide-8: #d59a02;
-    --slide-9: #c4cd7c;
-    --slide-10: #7d881f;
-    --slide-11: #ec6f05;
-    --slide-12: #5397ea;  
-    --slide-13: #d03382;  
+    --color-1: #111111;
+    --color-2: #ffffff;
+    --color-3: #adadad;
+    --color-4: #706f6f;
+    --color-5: #041a70;
+    --color-6: #964d18;
+    --color-7: #7d7939;
+    --color-8: #2441b9;
+    --color-9: #0c614c;
+    --color-10: #a41c2a;
+    --color-11: #d59a02;
+    --color-12: #c4cd7c;
+    --color-13: #7d881f;
+    --color-14: #ec6f05;
+    --color-15: #5397ea;  
+    --color-16: #d03382;  
 }
 
 html {

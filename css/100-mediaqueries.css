@@ -113,7 +113,7 @@
 
     .slide__button--close {
         padding: 0 calc(10px + 0.2vw);
-        border: 2px solid var(--grey);
+        border: 2px solid var(--color-3);
         font-size: calc(40px + 0.5vw);
     }
 
@@ -313,7 +313,7 @@
         width: 100%;
         transition: 0.3s;
         z-index: 1000;
-        background-color: var(--white);
+        background-color: var(--color-2);
     }
 
     .navbar__ul.active {
@@ -378,7 +378,7 @@
     /*SECTION GALERIE*/
     .slide__a--prev:hover,
     .slide__a--next:hover {
-        color: var(--text-white);
+        color: var(--text-color-2);
         box-shadow: none;
     }
 
@@ -390,9 +390,9 @@
 
     /*Désactive :hover*/
     .slide__span--square-txt-gal {
-        text-shadow: 2px 2px 2px var(--text-black);
+        text-shadow: 2px 2px 2px var(--text-color-1);
         opacity: 1;
-        color: var(--text-white);
+        color: var(--text-color-2);
     }
 
     .slide__div--square-gal:before {
@@ -413,7 +413,7 @@
 
     /*SECTION CONTACT*/
     .form__input {
-        border: 2px double var(--white);
+        border: 2px double var(--color-2);
         border-radius: 5px;
         padding: 10px;
     }
@@ -690,7 +690,7 @@
     }
 
     .form__input {
-        border: 2px double var(--white);
+        border: 2px double var(--color-2);
     }
 
     #nom,
